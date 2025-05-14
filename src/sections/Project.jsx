@@ -17,9 +17,11 @@ export default function Project() {
               <br /> tecnologia <br /> com cara de lar
             </h1>
             <div className="flex gap-4">
-              <button className="bg-white text-sm font-semibold px-8 py-3 rounded-full shadow hover:bg-gray-100">
-                sobre mim
-              </button>
+              <a href="#sobre-mim">
+                <button className="bg-white text-sm font-semibold px-8 py-3 rounded-full shadow hover:bg-gray-100">
+                  sobre mim
+                </button>
+              </a>
               <a
                 href="curriculo.pdf"
                 download
