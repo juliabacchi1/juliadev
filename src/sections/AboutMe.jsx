@@ -1,6 +1,9 @@
 export default function AboutMe() {
   return (
-    <section id="sobre-mim" className="relative flex flex-col md:flex-row h-screen">
+    <section
+      id="sobre-mim"
+      className="relative flex flex-col md:flex-row h-screen"
+    >
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
         <a href="#home" className="flex items-center">
           <img className="w-10 h-10 mr-2" src="logo.svg" alt="logo" />
@@ -30,11 +33,13 @@ export default function AboutMe() {
           </p>
 
           <div className="flex gap-4 px-8">
-            <button className="bg-white text-[#BA4B2E] font-semibold px-5 py-3 rounded-full shadow hover:bg-[#BA4B2E]/50 hover:text-white">
-              Tecnologias
-            </button>
+            <a href="#techs" className="flex items-center">
+              <button className="bg-white text-[#BA4B2E] font-semibold px-5 py-3 rounded-full shadow hover:bg-[#BA4B2E]/50 hover:text-white">
+                tecnologias
+              </button>
+            </a>
             <button className="bg-[#BA4B2E]/50 text-white font-semibold px-7 py-3 rounded-full shadow hover:bg-white hover:text-[#BA4B2E]">
-              Me chama
+              me chama
             </button>
           </div>
         </div>

@@ -1,9 +1,13 @@
 import AboutMe from "./AboutMe";
+import Techs from "./Techs";
 
 export default function Project() {
   return (
     <>
-      <main id="home" className="min-h-screen bg-gradient-to-r from-[#E2F4F3] to-[#C9D6FF] text-gray-800 p-4">
+      <main
+        id="home"
+        className="min-h-screen bg-gradient-to-r from-[#E2F4F3] to-[#C9D6FF] text-gray-800 p-4"
+      >
         <div className="p-2 flex items-center">
           <a href="/" className="flex items-center">
             <img className="w-10 h-10 mr-2" src="logo.svg" alt="logo" />
@@ -39,6 +43,7 @@ export default function Project() {
         </header>
       </main>
       <AboutMe />
+      <Techs />
     </>
   );
 }
