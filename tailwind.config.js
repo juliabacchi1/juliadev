@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
-        serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
+        serif: ["Gloock", ...defaultTheme.fontFamily.serif],
       },
       fontSize: {
         "4.5xl": "2.75rem", // 44px
