@@ -56,7 +56,7 @@ export default function Techs() {
       <div className="flex justify-center pb-10">
         <a href="#works" className="flex items-center">
           <button className="bg-white font-semibold px-9 py-3 rounded-full shadow hover:bg-gray-100">
-            projetos
+            trabalhos
           </button>
         </a>
       </div>

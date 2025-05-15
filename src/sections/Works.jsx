@@ -77,7 +77,7 @@ export default function Works() {
           </a>
         </div>
         <div className="absolute bottom-8 left-20 z-10">
-          <a href="#next-project" className="flex items-center">
+          <a href="#third-project" className="flex items-center">
             <button className="w-12 h-12 rounded-full bg-[#cbb396] flex items-center justify-center shadow hover:bg-[#b8a276]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,6 +111,57 @@ export default function Works() {
               <img
                 src="/rota-v.png"
                 alt="Visualização Baleia Franca"
+                className="max-w-[80%] h-auto object-contain translate-y-10"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="third-project"
+        className="h-screen relative bg-white flex flex-row justify-between items-center"
+      >
+        <div className="absolute top-0 left-0 px-6 py-6 z-10">
+          <a href="#home" className="flex items-center">
+            <img className="w-10 h-10 mr-2" src="logo.svg" alt="logo" />
+          </a>
+        </div>
+        <div className="absolute bottom-8 left-20 z-10">
+          <a href="#next-project" className="flex items-center">
+            <button className="w-12 h-12 rounded-full bg-[#cbb396] flex items-center justify-center shadow hover:bg-[#b8a276]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+          </a>
+        </div>
+
+        <div className="flex">
+          <div className="w-[50%] flex justify-end items-center">
+            <img
+              src="/recipes-d.png"
+              alt="Descrição Recipes Generator"
+              className="max-w-[40%] h-auto object-contain"
+            />
+          </div>
+
+          <div className="w-[40%] flex justify-start items-center">
+            <a href="https://recipes-generator-ai.netlify.app/" target="_blank">
+              <img
+                src="/recipes-v.png"
+                alt="Visualização Recipes Generator"
                 className="max-w-[80%] h-auto object-contain translate-y-10"
               />
             </a>
