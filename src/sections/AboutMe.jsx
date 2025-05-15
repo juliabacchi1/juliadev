@@ -38,9 +38,11 @@ export default function AboutMe() {
                 tecnologias
               </button>
             </a>
-            <button className="bg-[#BA4B2E]/50 text-white font-regular px-7 py-3 rounded-full shadow hover:bg-white hover:text-[#BA4B2E]">
-              me chama
-            </button>
+            <a href="#contato" className="flex items-center">
+              <button className="bg-[#BA4B2E]/50 text-white font-regular px-7 py-3 rounded-full shadow hover:bg-white hover:text-[#BA4B2E]">
+                me chama
+              </button>
+            </a>
           </div>
         </div>
       </div>

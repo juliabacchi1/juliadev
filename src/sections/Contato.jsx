@@ -16,7 +16,7 @@ export default function Contato() {
       <h2 className="font-serif text-[85px] text-[#156669] text-center">
         Me chama
       </h2>
-      <p className="text-[36px] text-center text-gray-800">
+      <p className="text-[35px] text-center text-gray-800">
         Vamos trabalhar juntos
       </p>
 
@@ -54,9 +54,11 @@ export default function Contato() {
       </div>
 
       <div className="mt-10">
-        <button className="bg-[#EAE0D4] font-semibold px-9 py-3 rounded-full shadow hover:bg-white">
-          blog tech
-        </button>
+        <a href="#blog" className="flex items-center">
+          <button className="bg-[#EAE0D4] font-semibold px-9 py-3 rounded-full shadow hover:bg-white">
+            blog tech
+          </button>
+        </a>
       </div>
     </section>
   );

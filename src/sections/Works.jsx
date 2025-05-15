@@ -22,9 +22,11 @@ export default function Works() {
                 ver mais
               </button>
             </a>
-            <button className="bg-[#EAE0D4] font-regular px-8 py-3 rounded-full shadow hover:bg-[#F6F7EC]">
-              blog tech
-            </button>
+            <a href="#blog" className="flex items-center">
+              <button className="bg-[#EAE0D4] font-regular px-8 py-3 rounded-full shadow hover:bg-[#F6F7EC]">
+                blog tech
+              </button>
+            </a>
           </div>
         </div>
 
@@ -93,7 +95,7 @@ export default function Works() {
               <img
                 src="/rota-v.png"
                 alt="Visualização Baleia Franca"
-                className="max-w-[80%] h-auto object-contain translate-y-10"
+                className="max-w-[80%] h-auto object-contain translate-y-6"
               />
             </a>
           </div>
@@ -110,7 +112,7 @@ export default function Works() {
           </a>
         </div>
         <div className="absolute bottom-8 left-20 z-10">
-          <a href="#next-project" className="flex items-center">
+          <a href="#contato" className="flex items-center">
             <button className="w-12 h-12 rounded-full bg-[#cbb396] flex items-center justify-center shadow hover:bg-[#b8a276]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +146,7 @@ export default function Works() {
               <img
                 src="/recipes-v.png"
                 alt="Visualização Recipes Generator"
-                className="max-w-[80%] h-auto object-contain translate-y-10"
+                className="max-w-[80%] h-auto object-contain translate-y-6"
               />
             </a>
           </div>

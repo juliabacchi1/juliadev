@@ -2,6 +2,7 @@ import AboutMe from "./AboutMe";
 import Techs from "./Techs";
 import Works from "./Works";
 import Contato from "./Contato";
+import Blog from "./Blog";
 
 export default function Project() {
   return (
@@ -48,6 +49,7 @@ export default function Project() {
       <Techs />
       <Works />
       <Contato />
+      <Blog />
     </>
   );
 }
