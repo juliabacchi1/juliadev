@@ -30,7 +30,7 @@ export default function Project() {
               <a
                 href="curriculo.pdf"
                 download
-                className="bg-gray-100 text-sm font-semibold px-5 py-3 rounded-full shadow hover:bg-white/100"
+                className="bg-gray-100 text-sm font-regular px-5 py-3 rounded-full shadow hover:bg-white/100"
               >
                 meu currículo
               </a>

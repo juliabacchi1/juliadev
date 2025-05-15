@@ -4,17 +4,22 @@ export default function Works() {
       id="works"
       className="h-screen relative bg-white flex flex-row justify-between items-center"
     >
-      {/* Parte esquerda - Título, texto e botões */}
-      <div className="w-[40%] px-10 flex flex-col justify-center items-start text-left">
-        <h2 className="text-[67px] font-serif text-[#BA4B2E] mb-4">Projetos</h2>
-        <p className="text-[16.5px] text-gray-700 mb-8 max-w-md">
-          Alguns dos meus trabalhos entregues e apps white label.
+      <div className="absolute top-0 left-0 px-6 py-6 z-10">
+        <a href="#home" className="flex items-center">
+          <img className="w-10 h-10 mr-2" src="logo.svg" alt="logo" />
+        </a>
+      </div>
+
+      <div className="w-[40%] mx-10 flex flex-col justify-center items-start text-left">
+        <h2 className="text-[67px] px-10 mb-4">Trabalhos</h2>
+        <p className="text-[16.5px] px-10 text-gray-700 mb-8 max-w-md">
+          Alguns dos meus projetos <br /> entregues e apps white label.
         </p>
-        <div className="flex gap-4">
-          <button className="bg-[#BA4B2E]/80 text-white font-semibold px-7 py-3 rounded-full shadow hover:bg-[#BA4B2E]">
+        <div className="flex gap-4 px-10">
+          <button className="bg-[#F6F7EC] font-semibold px-7 py-3 rounded-full shadow hover:bg-[#EAE0D4]">
             me chama
           </button>
-          <button className="bg-gray-100 text-[#BA4B2E] font-semibold px-7 py-3 rounded-full shadow hover:bg-[#BA4B2E]/20">
+          <button className="bg-[#EAE0D4] font-regular px-8 py-3 rounded-full shadow hover:bg-[#F6F7EC]">
             blog tech
           </button>
         </div>
@@ -23,8 +28,8 @@ export default function Works() {
       {/* Parte do meio - Imagem */}
       <div className="w-[20%] flex justify-center items-center">
         <img
-          src="/projeto1.png"
-          alt="Projeto 1"
+          src="/ecotasks-d.png"
+          alt="Descrição ecotasks"
           className="max-w-full h-auto object-contain"
         />
       </div>
