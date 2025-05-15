@@ -3,7 +3,7 @@ export default function Techs() {
     <section
       id="techs"
       className="h-screen bg-cover bg-center flex flex-col justify-between"
-      style={{ backgroundImage: "url('/nuvem.png')" }} // substitui com seu arquivo
+      style={{ backgroundImage: "url('/nuvem.png')" }}
     >
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
         <a href="#home" className="flex items-center">
@@ -11,28 +11,51 @@ export default function Techs() {
         </a>
       </div>
 
-      <div className="p-8">
-        <h2 className="text-[67px] font-serif text-[#BA4B2E]">Techs</h2>
+      <div className="mx-10 p-8">
+        <h2 className="text-[67px]">Techs</h2>
       </div>
 
-      {/* Grid de imagens */}
       <div className="flex flex-col items-center justify-center gap-6">
         <div className="flex gap-6">
-          <img src="/react.svg" alt="React" className="w-20 h-20" />
-          <img src="/tailwind.svg" alt="Tailwind" className="w-20 h-20" />
-          <img src="/vite.svg" alt="Vite" className="w-20 h-20" />
-          <img src="/figma.svg" alt="Figma" className="w-20 h-20" />
+          <img
+            src="/react.png"
+            alt="React"
+            className="w-40 h-40 rounded-full"
+          />
+          <img src="/vite.png" alt="Vite" className="w-40 h-40 rounded-full" />
+          <img
+            src="/nextjs.png"
+            alt="Next.js"
+            className="w-40 h-40 rounded-full"
+          />
+          <img
+            src="/figma.png"
+            alt="Figma"
+            className="w-40 h-40 rounded-full"
+          />
         </div>
         <div className="flex gap-6">
-          <img src="/js.svg" alt="JavaScript" className="w-20 h-20" />
-          <img src="/html.svg" alt="HTML" className="w-20 h-20" />
+          <img
+            src="/tailwind.png"
+            alt="Tailwind"
+            className="w-40 h-40 rounded-full"
+          />
+          <img
+            src="/javascript.png"
+            alt="JavaScript"
+            className="w-40 h-40 rounded-full"
+          />
+          <img
+            src="/typescript.png"
+            alt="TypeScript"
+            className="w-40 h-40 rounded-full"
+          />
         </div>
       </div>
 
-      {/* Botão */}
       <div className="flex justify-center pb-10">
-        <button className="bg-white text-[#BA4B2E] font-semibold px-7 py-3 rounded-full shadow hover:bg-[#BA4B2E]/50 hover:text-white">
-          Projetos
+        <button className="bg-white font-semibold px-9 py-3 rounded-full shadow hover:bg-[#BA4B2E]/50 hover:text-white">
+          projetos
         </button>
       </div>
     </section>
