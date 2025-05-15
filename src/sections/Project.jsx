@@ -40,7 +40,7 @@ export default function Project() {
           </div>
           <img
             src="home.png"
-            alt="computador vintage"
+            alt="computador vintage, imagem de freepik"
             className="w-96 md:w-100 h-auto"
           />
         </header>
