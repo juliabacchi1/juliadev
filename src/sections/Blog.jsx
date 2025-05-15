@@ -32,7 +32,7 @@ export default function Blog() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-wrap lg:flex-nowrap gap-8">
           {/* Coluna Esquerda */}
-          <div className="w-full lg:w-1/3 flex flex-col gap-8">
+          <div className="w-full lg:w-1/4 flex flex-col gap-8">
             {/* Título e botão */}
             <div className="flex flex-col items-start">
               <h2 className="text-[67px]">Blog</h2>
@@ -49,7 +49,7 @@ export default function Blog() {
               .map((card, index) => (
                 <div
                   key={index}
-                  className={`rounded-xl ${card.color} aspect-[3/4] p-4 relative flex flex-col justify-between`}
+                  className={`rounded-xl ${card.color} mt-10 py-20 relative flex flex-col justify-evenly`}
                 >
                   <div className="absolute top-2 right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center text-lg font-bold text-[#D4A418]">
                     +
@@ -57,9 +57,9 @@ export default function Blog() {
                   <img
                     src={card.icon}
                     alt={card.title}
-                    className="w-full h-30 mb-6"
+                    className="w-32 h-auto mx-auto"
                   />
-                  <div className="text-center text-[40px] font-serif text-xl mb-10 font-bold text-white">
+                  <div className="text-center text-[40px] leading-none font-serif mb-10 font-bold text-white">
                     {card.title}
                   </div>
                 </div>
@@ -67,13 +67,13 @@ export default function Blog() {
           </div>
 
           {/* Coluna Direita */}
-          <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {cards
               .filter((card) => card.title !== "Novidades na programação")
               .map((card, index) => (
                 <div
                   key={index}
-                  className={`rounded-xl ${card.color} aspect-[3/4] p-4 relative flex flex-col justify-between`}
+                  className={`rounded-xl ${card.color} py-5 relative flex flex-col justify-evenly`}
                 >
                   <div className="absolute top-2 right-2 w-6 h-6 bg-white rounded-full flex items-center justify-center text-lg font-bold text-[#D4A418]">
                     +
@@ -81,9 +81,9 @@ export default function Blog() {
                   <img
                     src={card.icon}
                     alt={card.title}
-                    className="w-full h-30 mb-6"
+                    className="w-32 h-auto mx-auto"
                   />
-                  <div className="text-center text-[40px] font-serif text-xl mb-10 font-bold text-white">
+                  <div className="text-center text-[40px] leading-none font-serif mb-10 font-bold text-white">
                     {card.title}
                   </div>
                 </div>
