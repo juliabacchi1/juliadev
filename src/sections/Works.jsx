@@ -17,32 +17,14 @@ export default function Works() {
             Alguns dos meus projetos <br /> entregues e apps white label.
           </p>
           <div className="flex gap-4 px-10">
-            <button className="bg-[#F6F7EC] font-semibold px-7 py-3 rounded-full shadow hover:bg-[#EAE0D4]">
-              me chama
-            </button>
+            <a href="#next-project" className="flex items-center">
+              <button className="bg-[#F6F7EC] font-semibold px-9 py-3 rounded-full shadow hover:bg-[#EAE0D4]">
+                ver mais
+              </button>
+            </a>
             <button className="bg-[#EAE0D4] font-regular px-8 py-3 rounded-full shadow hover:bg-[#F6F7EC]">
               blog tech
             </button>
-          </div>
-          <div className="absolute bottom-8 left-20 z-10">
-            <a href="#next-project" className="flex items-center">
-              <button className="w-12 h-12 rounded-full bg-[#cbb396] flex items-center justify-center shadow hover:bg-[#b8a276]">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-            </a>
           </div>
         </div>
 
