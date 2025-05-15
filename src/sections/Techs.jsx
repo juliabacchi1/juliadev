@@ -2,7 +2,7 @@ export default function Techs() {
   return (
     <section
       id="techs"
-      className="h-screen bg-cover bg-center flex flex-col justify-between"
+      className="h-screen relative bg-cover bg-center flex flex-col justify-between"
       style={{ backgroundImage: "url('/nuvem.png')" }}
     >
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
@@ -11,8 +11,8 @@ export default function Techs() {
         </a>
       </div>
 
-      <div className="mx-10 p-8">
-        <h2 className="text-[67px]">Techs</h2>
+      <div className="px-10">
+        <h2 className="text-[67px] ml-20">Techs</h2>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-6">
@@ -54,9 +54,11 @@ export default function Techs() {
       </div>
 
       <div className="flex justify-center pb-10">
-        <button className="bg-white font-semibold px-9 py-3 rounded-full shadow hover:bg-[#BA4B2E]/50 hover:text-white">
-          projetos
-        </button>
+        <a href="#works" className="flex items-center">
+          <button className="bg-white font-semibold px-9 py-3 rounded-full shadow hover:bg-gray-100">
+            projetos
+          </button>
+        </a>
       </div>
     </section>
   );
