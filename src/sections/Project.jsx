@@ -1,6 +1,7 @@
 import AboutMe from "./AboutMe";
 import Techs from "./Techs";
 import Works from "./Works";
+import Contato from "./Contato";
 
 export default function Project() {
   return (
@@ -46,6 +47,7 @@ export default function Project() {
       <AboutMe />
       <Techs />
       <Works />
+      <Contato />
     </>
   );
 }
