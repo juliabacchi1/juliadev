@@ -12,7 +12,8 @@ export default function Techs() {
       </div>
 
       <div className="px-10">
-        <h2 className="text-[67px] ml-20">Techs</h2>
+        <h2 className="text-[67px] ml-20">Tecnologias</h2>
+        <p>que uso no dia a dia</p>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-6">
