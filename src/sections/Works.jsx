@@ -3,28 +3,28 @@ import { useState } from "react";
 const Techs = () => {
   const projects = [
     {
-      img1: "/ecotasks-d.png",
-      img2: "/ecotasks-v.png",
-      link1: "https://github.com/juliabacchi1/ecotasks",
-      link2: "https://ecotasks.vercel.app/",
-      alt1: "Descrição ecotasks",
-      alt2: "Visualização ecotasks",
+      name: "EcoTasks",
+      description:
+        "Um app de desafios sustentáveis que ajuda a reduzir a pegada de carbono com ações diárias simples. Desenvolvido com React, TailwindCSS e Vite.",
+      view: "/ecotasks-v.png",
+      alt: "Visualização ecotasks",
+      link: "https://ecotasks.vercel.app/",
     },
     {
-      img1: "/rota-d.png",
-      img2: "/rota-v.png",
-      link1: "https://cero-phi.vercel.app/",
-      link2: "https://rotabaleiafranca.com.br/",
-      alt1: "Descrição Baleia Franca",
-      alt2: "Visualização Baleia Franca",
+      name: "Rota Baleia Franca",
+      description:
+        "Landing page institucional para rota turística no litoral de Santa Catarina. Design acessível, responsivo e com performance otimizada.",
+      view: "/rota-v.png",
+      alt: "Visualização Baleia Franca",
+      link: "https://rotabaleiafranca.com.br/",
     },
     {
-      img1: "/recipes-d.png",
-      img2: "/recipes-v.png",
-      link1: "https://github.com/juliabacchi1/recipes-generator",
-      link2: "https://recipes-generator-ai.netlify.app/",
-      alt1: "Descrição Recipes Generator",
-      alt2: "Visualização Recipes Generator",
+      name: "Recipes Generator",
+      description:
+        "Gerador de receitas com IA, onde o usuário insere ingredientes disponíveis e recebe sugestões criativas. Desenvolvido com React, OpenAI API e Netlify.",
+      view: "/recipes-v.png",
+      alt: "Visualização Recipes Generator",
+      link: "https://recipes-generator-ai.netlify.app/",
     },
   ];
 
@@ -34,20 +34,20 @@ const Techs = () => {
     setIndex((prev) => (prev + 1) % projects.length);
   };
 
+  const { name, description, view, alt, link } = projects[index];
+
   return (
     <section
       id="works"
       className="fullscreen-section bg-white flex flex-col md:flex-row justify-between items-center"
     >
-      {/* Logo */}
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
         <a href="#home" className="flex items-center">
           <img className="w-10 h-10 mr-2" src="logo.svg" alt="logo" />
         </a>
       </div>
 
-      {/* Texto */}
-      <div className="w-full md:w-[40%] px-0 md:px-6 my-20 md:my-2 md:mx-10 flex flex-col justify-center items-center md:items-start text-left mb-10 md:mb-0">
+      <div className="w-full md:w-[30%] px-0 md:px-6 my-20 md:my-2 md:mx-10 flex flex-col justify-center items-center md:items-start text-left mb-10 md:mb-0">
         <h2 className="text-[36px] md:text-[67px] px-10 mb-4">Trabalhos</h2>
         <p className="text-[16.5px] px-10 text-gray-700 mb-8 max-w-md">
           Alguns dos meus projetos <br /> entregues e apps white label.
@@ -67,26 +67,21 @@ const Techs = () => {
         </div>
       </div>
 
-      {/* Imagens do projeto */}
-      <div className="w-full md:w-[60%] flex flex-col md:flex-row justify-center items-center gap-6 px-6">
-        <div className="w-full md:w-[40%] flex justify-center items-center">
-          <a href={projects[index].link1} target="_blank" rel="noreferrer">
-            <img
-              src={projects[index].img1}
-              alt={projects[index].alt1}
-              className="max-w-[80%] md:max-w-full h-auto object-contain"
-            />
-          </a>
-        </div>
-        <div className="w-full md:w-[60%] flex justify-center items-center">
-          <a href={projects[index].link2} target="_blank" rel="noreferrer">
-            <img
-              src={projects[index].img2}
-              alt={projects[index].alt2}
-              className="max-w-[80%] h-auto object-contain md:translate-y-10"
-            />
-          </a>
-        </div>
+      <div className="w-full md:w-[40%] flex justify-center items-center px-4 md:px-10 my-10 md:my-0">
+        <a href={link} target="_blank" rel="noreferrer">
+          <img
+            src={view}
+            alt={alt}
+            className="max-w-[80%] h-auto object-contain translate-y-4"
+          />
+        </a>
+      </div>
+
+      <div className="w-full md:w-[30%] px-10 md:px-20 flex flex-col justify-center items-center md:items-start text-left my-10 md:my-0">
+        <h2 className="text-[28px] md:text-[30px] font-bold mb-4">{name}</h2>
+        <p className="text-[16px] md:text-[14px] text-gray-700 mb-6">
+          {description}
+        </p>
       </div>
     </section>
   );
