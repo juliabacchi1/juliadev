@@ -70,9 +70,9 @@ export default function Blog() {
           <div className="w-full lg:w-1/4 flex flex-col gap-6 sm:gap-8">
             <div className="flex flex-col items-center px-2 sm:px-0">
               <h2 className="text-[36px] md:text-[67px]">Blog</h2>
-              <a href="#contato">
+              <a href="#home">
                 <button className="bg-white mt-5 md:mt-3 text-sm font-semibold px-9 py-3 rounded-full shadow hover:bg-gray-100">
-                  me chama
+                  volte aqui
                 </button>
               </a>
             </div>

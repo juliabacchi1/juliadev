@@ -3,7 +3,7 @@ import { useState } from "react";
 const Techs = () => {
   const projects = [
     {
-      name: "EcoTasks",
+      name: "ecotasks",
       description:
         "Um app de desafios sustentáveis que ajuda a reduzir a pegada de carbono com ações diárias simples. Desenvolvido com React, TailwindCSS e Vite.",
       view: "/ecotasks-v.png",
@@ -13,7 +13,7 @@ const Techs = () => {
     {
       name: "Rota Baleia Franca",
       description:
-        "Landing page institucional para rota turística no litoral de Santa Catarina. Design acessível, responsivo e com performance otimizada.",
+        "Landing page institucional para rota turística no litoral de Santa Catarina. Design acessível, responsivo e com performance otimizada. Desenvolvido com WordPress.",
       view: "/rota-v.png",
       alt: "Visualização Baleia Franca",
       link: "https://rotabaleiafranca.com.br/",
@@ -21,7 +21,7 @@ const Techs = () => {
     {
       name: "Recipes Generator",
       description:
-        "Gerador de receitas com IA, onde o usuário insere ingredientes disponíveis e recebe sugestões criativas. Desenvolvido com React, OpenAI API e Netlify.",
+        "Gerador de receitas com IA, onde o usuário insere ingredientes disponíveis e recebe sugestões criativas. Desenvolvido com JavaScript, OpenAI API e Netlify.",
       view: "/recipes-v.png",
       alt: "Visualização Recipes Generator",
       link: "https://recipes-generator-ai.netlify.app/",
@@ -52,22 +52,22 @@ const Techs = () => {
         <p className="text-[16.5px] px-10 text-gray-700 mb-8 max-w-md">
           Alguns dos meus projetos <br /> entregues e apps white label.
         </p>
-        <div className="flex gap-4 px-10 flex-wrap">
+        <div className="flex flex-wrap gap-4 px-10 ">
           <button
             onClick={nextProject}
             className="bg-[#F6F7EC] font-semibold px-9 py-3 rounded-full shadow hover:bg-[#EAE0D4]"
           >
             ver mais
           </button>
-          <a href="#blog" className="flex items-center">
-            <button className="bg-[#EAE0D4] font-regular px-8 py-3 rounded-full shadow hover:bg-[#F6F7EC]">
-              blog tech
+          <a href="#contato" className="flex items-center">
+            <button className="bg-[#EAE0D4] font-regular px-7 py-3 rounded-full shadow hover:bg-[#F6F7EC]">
+              me chama
             </button>
           </a>
         </div>
       </div>
 
-      <div className="w-full md:w-[40%] flex justify-center items-center px-4 md:px-10 my-10 md:my-0">
+      <div className="w-full md:w-[40%] flex justify-center items-center px-4 md:px-10 my-0">
         <a href={link} target="_blank" rel="noreferrer">
           <img
             src={view}
@@ -77,7 +77,7 @@ const Techs = () => {
         </a>
       </div>
 
-      <div className="w-full md:w-[30%] px-10 md:px-20 flex flex-col justify-center items-center md:items-start text-left my-10 md:my-0">
+      <div className="w-full md:w-[25%] px-10 md:px-6 flex flex-col justify-center items-center md:items-start text-left my-10 md:my-0">
         <h2 className="text-[28px] md:text-[30px] font-bold mb-4">{name}</h2>
         <p className="text-[16px] md:text-[14px] text-gray-700 mb-6">
           {description}

@@ -13,11 +13,11 @@ export default function Contato() {
         </a>
       </div>
 
-      <h2 className="font-serif text-[42px] md:text-[85px] text-[#156669] text-center">
-        Me chama
+      <h2 className="font-serif text-[45px] md:text-[88px] text-[#156669] text-center">
+        E agora?!
       </h2>
       <p className="text-[18px] md:text-[35px] text-center text-gray-800">
-        Vamos trabalhar juntos
+        Bora trabalhar juntos
       </p>
 
       <div className="flex gap-4 md:gap-6 m-7">
