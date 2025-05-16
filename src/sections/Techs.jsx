@@ -2,7 +2,7 @@ export default function Techs() {
   return (
     <section
       id="techs"
-      className="h-auto md:h-screen relative bg-cover bg-center flex flex-col justify-between"
+      className="fullscreen-section bg-cover bg-center flex flex-col justify-between"
       style={{ backgroundImage: "url('/nuvem.png')" }}
     >
       <div className="absolute top-0 left-0 px-4 md:px-6 py-4 md:py-6 z-10">
@@ -17,41 +17,79 @@ export default function Techs() {
 
       <div className="flex flex-col items-center mt-10 md:mt-0">
         <div className="grid grid-cols-3 md:grid-cols-4 gap-6 px-4 md:px-0">
-          <img
-            src="/react.png"
-            alt="React"
-            className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-          />
-          <img
-            src="/vite.png"
-            alt="Vite"
-            className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-          />
-          <img
-            src="/nextjs.png"
-            alt="Next.js"
-            className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-          />
-          <img
-            src="/figma.png"
-            alt="Figma"
-            className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-          />
-          <img
-            src="/tailwind.png"
-            alt="Tailwind"
-            className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-          />
-          <img
-            src="/javascript.png"
-            alt="JavaScript"
-            className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-          />
-          <img
-            src="/typescript.png"
-            alt="TypeScript"
-            className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-          />
+          <a
+            href="https://react.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/react.png"
+              alt="Logo do React"
+              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
+            />
+          </a>
+          <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/vite.png"
+              alt="Logo do Vite"
+              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
+            />
+          </a>
+          <a
+            href="https://nextjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/nextjs.png"
+              alt="Logo do Next.js"
+              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
+            />
+          </a>
+          <a
+            href="https://www.figma.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/figma.png"
+              alt="Logo do Figma"
+              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
+            />
+          </a>
+          <a
+            href="https://tailwindcss.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/tailwind.png"
+              alt="Logo do Tailwind"
+              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
+            />
+          </a>
+          <a
+            href="https://aws.amazon.com/pt/what-is/javascript/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/javascript.png"
+              alt="Logo do JavaScript"
+              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
+            />
+          </a>
+          <a
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/typescript.png"
+              alt="Logo do TypeScript"
+              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
+            />
+          </a>
         </div>
       </div>
 

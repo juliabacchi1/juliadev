@@ -3,7 +3,7 @@ export default function Works() {
     <>
       <section
         id="works"
-        className="h-screen relative bg-white flex flex-row justify-between items-center"
+        className="fullscreen-section bg-white flex flex-col md:flex-row justify-between items-center"
       >
         <div className="absolute top-0 left-0 px-6 py-6 z-10">
           <a href="#home" className="flex items-center">
@@ -11,8 +11,8 @@ export default function Works() {
           </a>
         </div>
 
-        <div className="w-[40%] mx-10 flex flex-col justify-center items-start text-left">
-          <h2 className="text-[67px] px-10 mb-4">Trabalhos</h2>
+        <div className="w-full md:w-[40%] px-0 md:px-6 my-20 md:my-2 md:mx-10 flex flex-col justify-center items-center md:items-start text-left mb-10 md:mb-0">
+          <h2 className="text-[36px] md:text-[67px] px-10 mb-4">Trabalhos</h2>
           <p className="text-[16.5px] px-10 text-gray-700 mb-8 max-w-md">
             Alguns dos meus projetos <br /> entregues e apps white label.
           </p>

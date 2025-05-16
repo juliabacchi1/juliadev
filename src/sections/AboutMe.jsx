@@ -2,7 +2,7 @@ export default function AboutMe() {
   return (
     <section
       id="sobre-mim"
-      className="relative flex flex-col md:flex-row h-auto md:h-screen"
+      className="fullscreen-section flex flex-col md:flex-row"
     >
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
         <a href="#home" className="flex items-center">
@@ -19,7 +19,7 @@ export default function AboutMe() {
       </div>
 
       <div className="w-full md:w-1/2 bg-[#EEA595] flex flex-col justify-center items-start py-8">
-        <div className="p-2 md:p-8 mx-8 text-start">
+        <div className=" md:p-8 mx-8 text-start">
           <h2 className="font-serif text-[#BA4B2E] text-2xl md:text-6xl mb-6 px-8 leading-snug text-center md:text-left">
             Olá, seja <br className="hidden md:block" /> bem-vindo
           </h2>

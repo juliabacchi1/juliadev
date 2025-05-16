@@ -4,7 +4,7 @@ export default function Contato() {
   return (
     <section
       id="contato"
-      className="relative h-screen bg-cover bg-center flex flex-col justify-center items-center"
+      className="fullscreen-section bg-cover bg-center flex flex-col justify-center items-center"
       style={{ backgroundImage: "url('/fundo-contato.png')" }}
     >
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
@@ -13,14 +13,14 @@ export default function Contato() {
         </a>
       </div>
 
-      <h2 className="font-serif text-[85px] text-[#156669] text-center">
+      <h2 className="font-serif text-[42px] md:text-[85px] text-[#156669] text-center">
         Me chama
       </h2>
-      <p className="text-[35px] text-center text-gray-800">
+      <p className="text-[18px] md:text-[35px] text-center text-gray-800">
         Vamos trabalhar juntos
       </p>
 
-      <div className="flex gap-6 m-7">
+      <div className="flex gap-4 md:gap-6 m-7">
         <a
           href="https://wa.me/48991779743?text=Oi%20"
           target="_blank"

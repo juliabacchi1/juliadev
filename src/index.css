@@ -5,3 +5,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.fullscreen-section {
+  @apply min-h-screen md:h-screen relative;
+}
