@@ -9,13 +9,11 @@ export default function PostLivros() {
         </a>
       </div>
       <div className="relative w-full max-w-5xl">
-        {/* Infos do topo */}
         <div className="absolute -top-10 left-0 font-medium text-gray-600 text-lg flex items-center gap-2">
           <span>por Julia Bacchi</span>
           <img src={Arrow} alt="seta curva" className="w-16 h-16" />
         </div>
 
-        {/* Data */}
         <div className="absolute -top-16 right-0">
           <div className="w-28 h-28 rounded-full border-2 border-black bg-white flex flex-col items-center justify-center font-semibold text-lg text-black shadow">
             <span>20/02</span>
@@ -23,23 +21,19 @@ export default function PostLivros() {
           </div>
         </div>
 
-        {/* Quadrado central branco */}
         <div className="bg-white rounded-xl border-2 border-black p-6 w-full mx-auto mt-6">
-          {/* Imagem grande */}
           <img
             src="/PostLivros.png"
             alt="Livros, imagem de freepik"
-            className="w-full h-72 object-cover py-3 mb-6"
+            className="w-full h-[30rem] object-cover py-3 mb-6"
           />
 
-          {/* Título */}
           <h1 className="text-transform: uppercase text-3xl sm:text-4xl tracking-widest font-semibold mb-4 text-gray-800">
             3 livros que você não pode perder
           </h1>
 
-          {/* Texto */}
           <p className="text-base py-10 sm:text-lg leading-relaxed text-gray-700">
-            Se você é apaixonado por tecnologia, inovação e o impacto que tudo
+            📚 Se você é apaixonado por tecnologia, inovação e o impacto que tudo
             isso causa na nossa mente e sociedade, aqui vão 3 sugestões
             imperdíveis:
             <br />
@@ -56,6 +50,12 @@ export default function PostLivros() {
             <strong>3. Geração Dopamina</strong>, de Dra. Anna Lembke —
             Essencial pra refletir sobre o uso da tecnologia e como ela afeta
             nosso cérebro.
+            <br />
+            <br />
+            🎁 <strong>Bônus:</strong> O Fim da Eternidade, de Isaac Asimov Um
+            mergulho na manipulação do tempo e nas consequências de tentar
+            “melhorar” a humanidade. Um clássico da ficção científica que
+            conversa com temas de tecnologia, controle e livre-arbítrio.
             <br />
             <br />
             Uma leitura pra colocar os pés no chão... e ao mesmo tempo voar.

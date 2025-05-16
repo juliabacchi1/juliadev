@@ -11,45 +11,46 @@ export default function Techs() {
         </a>
       </div>
 
-      <div className="px-10">
-        <h2 className="text-[67px] ml-20">Tecnologias</h2>
-        <p>que uso no dia a dia</p>
+      <div className="px-10 mt-10 ml-20">
+        <h2 className="text-[67px]">Tecnologias</h2>
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-6">
-        <div className="flex gap-6">
+      <div className="flex flex-col items-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           <img
             src="/react.png"
             alt="React"
-            className="w-40 h-40 rounded-full"
+            className="w-40 h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
           />
-          <img src="/vite.png" alt="Vite" className="w-40 h-40 rounded-full" />
+          <img
+            src="/vite.png"
+            alt="Vite"
+            className="w-40 h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
+          />
           <img
             src="/nextjs.png"
             alt="Next.js"
-            className="w-40 h-40 rounded-full"
+            className="w-40 h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
           />
           <img
             src="/figma.png"
             alt="Figma"
-            className="w-40 h-40 rounded-full"
+            className="w-40 h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
           />
-        </div>
-        <div className="flex gap-6">
           <img
             src="/tailwind.png"
             alt="Tailwind"
-            className="w-40 h-40 rounded-full"
+            className="w-40 h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
           />
           <img
             src="/javascript.png"
             alt="JavaScript"
-            className="w-40 h-40 rounded-full"
+            className="w-40 h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
           />
           <img
             src="/typescript.png"
             alt="TypeScript"
-            className="w-40 h-40 rounded-full"
+            className="w-40 h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
           />
         </div>
       </div>

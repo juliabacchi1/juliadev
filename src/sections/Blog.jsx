@@ -32,7 +32,7 @@ export default function Blog() {
       title: "Séries imperdíveis",
       color: "bg-[#F05B28]",
       icon: svg4,
-      link: "/blog/novidades",
+      link: "/blog/series",
     },
     {
       title: "O que front-end precisa",
@@ -64,7 +64,6 @@ export default function Blog() {
 
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-wrap lg:flex-nowrap gap-4">
-          {/* Coluna Esquerda */}
           <div className="w-full lg:w-1/4 flex flex-col gap-8">
             <div className="flex flex-col items-center">
               <h2 className="text-[67px]">Blog</h2>
@@ -75,7 +74,6 @@ export default function Blog() {
               </a>
             </div>
 
-            {/* Card destaque */}
             {cards
               .filter((card) => card.title === "Novidades no mundo tech")
               .map((card, index) => (
@@ -100,7 +98,6 @@ export default function Blog() {
               ))}
           </div>
 
-          {/* Coluna Direita */}
           <div className="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {cards
               .filter((card) => card.title !== "Novidades no mundo tech")

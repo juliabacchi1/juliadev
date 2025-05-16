@@ -17,13 +17,13 @@ export default function Project() {
             <p className="font-semibold">Portfolio Julia Bacchi</p>
           </a>
         </div>
-        <header className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-around">
-          <div className="mb-8 md:mb-0">
-            <h1 className="text-5.5xl leading-tight mb-4">
+        <header className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-around gap-4 md:gap-0">
+          <div className="mb-4 md:mb-0 text-center md:text-left">
+            <h1 className="text-[clamp(2rem,6vw,3.5rem)] leading-tight mb-4 pt-6 md:pt-0 text-center md:text-left">
               Desenvolvendo
               <br /> tecnologia <br /> com cara de lar
             </h1>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4">
               <a href="#sobre-mim">
                 <button className="bg-white text-sm font-semibold px-8 py-3 rounded-full shadow hover:bg-gray-100">
                   sobre mim
@@ -41,7 +41,7 @@ export default function Project() {
           <img
             src="home.png"
             alt="computador vintage, imagem de freepik"
-            className="w-96 md:w-100 h-auto"
+            className="w-64 md:w-96 h-auto mx-auto md:mx-0"
           />
         </header>
       </main>
