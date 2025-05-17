@@ -72,14 +72,14 @@ const Techs = () => {
           <img
             src={view}
             alt={alt}
-            className="max-w-[80%] h-auto object-contain translate-y-4"
+            className="w-[80%] h-auto object-contain mx-auto md:mx-0"
           />
         </a>
       </div>
 
       <div className="w-full md:w-[25%] px-10 md:px-6 flex flex-col justify-center items-center md:items-start text-left my-10 md:my-0">
         <h2 className="text-[28px] md:text-[30px] font-bold mb-4">{name}</h2>
-        <p className="text-[16px] md:text-[14px] text-gray-700 mb-6">
+        <p className="text-[15px] md:text-[14px] text-gray-700 mb-6 ">
           {description}
         </p>
       </div>

@@ -9,7 +9,7 @@ export default function Project() {
     <>
       <main
         id="home"
-        className="overflow-hidden md:min-h-screen relative bg-gradient-to-r from-[#E2F4F3] to-[#C9D6FF] text-gray-800 p-4"
+        className="min-h-[100dvh] md:min-h-screen relative bg-gradient-to-r from-[#E2F4F3] to-[#C9D6FF] text-gray-800 p-4"
       >
         <div className="p-2 flex items-center">
           <a href="/" className="flex items-center">
@@ -17,9 +17,9 @@ export default function Project() {
             <p className="font-semibold">Portfolio Julia Bacchi</p>
           </a>
         </div>
-        <header className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-around">
+        <header className="max-w-5xl mx-auto my-10 md:my-0 flex flex-col-reverse md:flex-row items-center justify-around">
           <div className="mb-4 md:mb-0 text-center md:text-left">
-            <h1 className="text-[clamp(2rem,6vw,3.5rem)] leading-tight mb-4 pt-6 md:pt-0 text-center md:text-left">
+            <h1 className="text-[clamp(2rem,6vw,3.5rem)] leading-tight mb-8 md:mb-4 text-center md:text-left">
               Desenvolvendo
               <br /> tecnologia <br /> com cara de lar
             </h1>
@@ -41,7 +41,7 @@ export default function Project() {
           <img
             src="home.png"
             alt="computador vintage, imagem de freepik"
-            className="w-64 md:w-96 h-auto mx-auto md:mx-0 -mt-8 sm:-mt-10"
+            className="w-44 md:w-96 h-auto mx-auto md:mx-0 -mt-8 sm:-mt-10"
           />
         </header>
       </main>
