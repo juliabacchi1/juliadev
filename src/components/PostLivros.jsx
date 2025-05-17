@@ -5,7 +5,7 @@ export default function PostLivros() {
     <section className="relative bg-[#f4f3f2] min-h-screen py-20 px-4 flex justify-center items-start">
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
         <a href="/" className="flex items-center">
-          <img className="w-10 h-10 mr-2" src="/logo.svg" alt="logo" />
+          <img className="h-10 mr-2 w-auto" src="logo.svg" alt="logo" />
         </a>
       </div>
       <div className="relative w-full max-w-5xl">
@@ -33,8 +33,8 @@ export default function PostLivros() {
           </h1>
 
           <p className="text-base py-10 sm:text-lg leading-relaxed text-gray-700">
-            📚 Se você é apaixonado por tecnologia, inovação e o impacto que tudo
-            isso causa na nossa mente e sociedade, aqui vão 3 sugestões
+            📚 Se você é apaixonado por tecnologia, inovação e o impacto que
+            tudo isso causa na nossa mente e sociedade, aqui vão 3 sugestões
             imperdíveis:
             <br />
             <br />

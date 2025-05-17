@@ -13,7 +13,7 @@ export default function Project() {
       >
         <div className="p-2 flex items-center">
           <a href="/" className="flex items-center">
-            <img className="w-10 h-10 mr-2" src="logo.svg" alt="logo" />
+            <img className="h-10 mr-2 w-auto" src="logo.svg" alt="logo" />
             <p className="font-semibold">Portfolio Julia Bacchi</p>
           </a>
         </div>

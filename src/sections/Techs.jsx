@@ -7,7 +7,7 @@ export default function Techs() {
     >
       <div className="absolute top-0 left-0 px-4 md:px-6 py-4 md:py-6 z-10">
         <a href="#home" className="flex items-center">
-          <img className="w-10 h-10 mr-2" src="logo.svg" alt="logo" />
+          <img className="h-10 mr-2 w-auto" src="logo.svg" alt="logo" />
         </a>
       </div>
 
