@@ -1,9 +1,48 @@
+import { FaReact, FaFigma } from "react-icons/fa";
+import { AiOutlineJavaScript } from "react-icons/ai";
+import {
+  SiTailwindcss,
+  SiTypescript,
+  SiVite,
+  SiNextdotjs,
+} from "react-icons/si";
+
+const tecnologias = [
+  { icon: <FaReact size={80} />, name: "React", link: "https://react.dev/" },
+  {
+    icon: <SiNextdotjs size={80} />,
+    name: "Next.js",
+    link: "https://nextjs.org/",
+  },
+  { icon: <SiVite size={80} />, name: "Vite", link: "https://vitejs.dev/" },
+  {
+    icon: <SiTypescript size={80} />,
+    name: "TypeScript",
+    link: "https://www.typescriptlang.org/",
+  },
+
+  {
+    icon: <AiOutlineJavaScript size={80} />,
+    name: "JavaScript",
+    link: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+  },
+  {
+    icon: <SiTailwindcss size={80} />,
+    name: "TailwindCSS",
+    link: "https://tailwindcss.com/",
+  },
+  {
+    icon: <FaFigma size={80} />,
+    name: "Figma",
+    link: "https://www.figma.com/",
+  },
+];
+
 export default function Techs() {
   return (
     <section
       id="techs"
-      className="fullscreen-section bg-cover bg-center flex flex-col justify-between"
-      style={{ backgroundImage: "url('/nuvem.png')" }}
+      className="fullscreen-section flex flex-col justify-between items-center px-4 py-10 bg-gradient-to-b from-[#8AA9F8] to-[#EFC9DD] text-white"
     >
       <div className="absolute top-0 left-0 px-4 md:px-6 py-4 md:py-6 z-10">
         <a href="#home" className="flex items-center">
@@ -11,91 +50,30 @@ export default function Techs() {
         </a>
       </div>
 
-      <div className="px-4 md:px-10 mt-20 md:mt-10 ml-0 md:ml-20 text-center md:text-left">
-        <h2 className="text-[36px] md:text-[67px] mt-6 md:mt-0">Tecnologias</h2>
+      <h2 className="text-[36px] md:text-[67px] text-center mt-10 md:mt-20">
+        Tecnologias
+      </h2>
+
+      <div className="flex flex-wrap justify-center gap-8 md:gap-12 mt-6 md:mt-10 max-w-5xl px-4 text-white">
+        {tecnologias.map((tech, index) => (
+          <a
+            key={index}
+            href={tech.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center hover:scale-105 transition-transform duration-300"
+          >
+            <div className="mb-2">{tech.icon}</div>
+            <span className="text-sm md:text-base font-semibold">
+              {tech.name}
+            </span>
+          </a>
+        ))}
       </div>
 
-      <div className="flex flex-col items-center mt-10 md:mt-0">
-        <div className="grid grid-cols-3 md:grid-cols-4 gap-6 px-4 md:px-0">
-          <a
-            href="https://react.dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/react.png"
-              alt="Logo do React"
-              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-            />
-          </a>
-          <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="/vite.png"
-              alt="Logo do Vite"
-              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-            />
-          </a>
-          <a
-            href="https://nextjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/nextjs.png"
-              alt="Logo do Next.js"
-              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-            />
-          </a>
-          <a
-            href="https://www.figma.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/figma.png"
-              alt="Logo do Figma"
-              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-            />
-          </a>
-          <a
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/tailwind.png"
-              alt="Logo do Tailwind"
-              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-            />
-          </a>
-          <a
-            href="https://aws.amazon.com/pt/what-is/javascript/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/javascript.png"
-              alt="Logo do JavaScript"
-              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-            />
-          </a>
-          <a
-            href="https://www.typescriptlang.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="/typescript.png"
-              alt="Logo do TypeScript"
-              className="w-24 h-24 md:w-40 md:h-40 rounded-full hover:scale-105 transition-transform duration-300 hover:brightness-110"
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="flex justify-center pb-10 mt-10 md:mt-0">
-        <a href="#works" className="flex items-center">
-          <button className="bg-white font-semibold px-9 py-3 rounded-full shadow hover:bg-gray-100">
+      <div className="m-6">
+        <a href="#works">
+          <button className="bg-white text-black font-semibold px-9 py-3 rounded-full shadow hover:bg-opacity-90 transition">
             trabalhos
           </button>
         </a>

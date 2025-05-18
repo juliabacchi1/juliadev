@@ -67,7 +67,7 @@ const Techs = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-[40%] flex justify-center items-center px-4 md:px-10 my-0">
+      <div className="w-full md:w-[40%] flex justify-center items-center px-4 my-0">
         <a href={link} target="_blank" rel="noreferrer">
           <img
             src={view}
@@ -77,7 +77,7 @@ const Techs = () => {
         </a>
       </div>
 
-      <div className="w-full md:w-[25%] px-10 md:px-6 flex flex-col justify-center items-center md:items-start text-left my-10 md:my-0">
+      <div className="w-full md:w-[30%] px-10 md:px-6 flex flex-col justify-center items-center md:items-start text-left my-10 md:my-0">
         <h2 className="text-[28px] md:text-[30px] font-bold mb-4">{name}</h2>
         <p className="text-[15px] md:text-[14px] text-gray-700 mb-6 ">
           {description}
