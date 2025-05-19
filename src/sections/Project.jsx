@@ -9,7 +9,7 @@ export default function Project() {
     <>
       <main
         id="home"
-        className="fullscreen-section bg-gradient-to-r from-[#E2F4F3] to-[#C9D6FF] text-gray-800 p-4"
+        className="fullscreen-section bg-gradient-to-r from-[#E2F4F3] to-[#C9D6FF] text-gray-800 p-4 pb-40"
       >
         {/* Logo header */}
         <div className="p-2 flex items-center">
