@@ -97,8 +97,16 @@ export default function Blog() {
     >
       {/* Logo flutuante no topo */}
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
-        <a href="#home" className="flex items-center">
-          <img className="h-10 mr-2 w-auto" src="logo.svg" alt="logo" />
+        <a
+          href="#home"
+          className="flex items-center"
+          aria-label="Voltar para o topo"
+        >
+          <img
+            className="h-10 mr-2 w-auto"
+            src="logo.svg"
+            alt="Logo do portfolio de Julia Bacchi"
+          />
         </a>
       </div>
 

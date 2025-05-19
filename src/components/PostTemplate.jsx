@@ -5,19 +5,28 @@ export default function PostTemplate({ title, image, date, children }) {
 
   return (
     <section className="relative bg-[#f4f3f2] min-h-screen py-20 px-4 flex justify-center items-start">
+      {/* Logo flutuante no topo */}
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
-        <a href="/" className="flex items-center">
-          <img className="h-10 mr-2 w-auto" src="/logo.svg" alt="logo" />
+        <a
+          href="/"
+          className="flex items-center"
+          aria-label="Voltar para o topo"
+        >
+          <img
+            className="h-10 mr-2 w-auto"
+            src="/logo.svg"
+            alt="Logo do Portfolio de Julia Bacchi"
+          />
         </a>
       </div>
 
       <div className="relative w-full max-w-5xl">
-        <div className="absolute -top-10 left-0 font-medium text-gray-600 text-lg flex items-center gap-2">
+        <div className="absolute left-0 font-medium text-gray-600 text-lg flex items-center gap-2 sm:-top-10 -top-2">
           <span>por Julia Bacchi</span>
           <img src={Arrow} alt="seta curva" className="w-16 h-16" />
         </div>
 
-        <div className="absolute -top-16 right-0">
+        <div className="absolute right-0 sm:-top-16 -top-6">
           <div className="w-28 h-28 rounded-full border-2 border-black bg-white flex flex-col items-center justify-center font-semibold text-lg text-black shadow leading-tight text-center">
             <span>
               {day} / {month}
@@ -26,12 +35,12 @@ export default function PostTemplate({ title, image, date, children }) {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl border-2 border-black p-6 w-full mx-auto mt-6">
+        <div className="bg-white rounded-xl border-2 border-black p-6 w-full mx-auto mt-16 sm:mt-6">
           <img
             src={image}
             alt={title}
             loading="lazy"
-            className="w-full h-[30rem] object-cover py-3 mb-6"
+            className="w-full h-[18rem] sm:h-[30rem] object-cover py-3 mb-6"
           />
 
           <h1 className="uppercase text-3xl sm:text-4xl tracking-widest font-semibold mb-4 text-gray-800">

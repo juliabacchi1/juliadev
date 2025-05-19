@@ -42,8 +42,16 @@ const Works = () => {
     >
       {/* Logo flutuante no topo */}
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
-        <a href="#home" className="flex items-center">
-          <img className="h-10 mr-2 w-auto" src="logo.svg" alt="logo" />
+        <a
+          href="#home"
+          className="flex items-center"
+          aria-label="Voltar para o topo"
+        >
+          <img
+            className="h-10 mr-2 w-auto"
+            src="logo.svg"
+            alt="Logo do portfolio de Julia Bacchi"
+          />
         </a>
       </div>
 
@@ -76,11 +84,7 @@ const Works = () => {
           rel="noreferrer"
           className="w-full md:w-1/2"
         >
-          <img
-            src={view}
-            alt={alt}
-            className="w-full h-auto object-contain"
-          />
+          <img src={view} alt={alt} className="w-full h-auto object-contain" />
         </a>
 
         {/* Descrição */}

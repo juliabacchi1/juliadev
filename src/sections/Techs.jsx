@@ -52,7 +52,7 @@ export default function Techs() {
         >
           <img
             src="logo.svg"
-            alt="Logo do portfólio de Julia Bacchi"
+            alt="Logo do portfolio de Julia Bacchi"
             className="h-10 mr-2 w-auto"
           />
         </a>
