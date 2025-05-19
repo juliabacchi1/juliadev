@@ -30,6 +30,7 @@ export default function PostTemplate({ title, image, date, children }) {
           <img
             src={image}
             alt={title}
+            loading="lazy"
             className="w-full h-[30rem] object-cover py-3 mb-6"
           />
 
@@ -37,9 +38,18 @@ export default function PostTemplate({ title, image, date, children }) {
             {title}
           </h1>
 
-          <div className="text-base py-10 sm:text-lg leading-relaxed text-gray-700">
+          <div className="text-base py-10 sm:text-lg leading-relaxed text-gray-700 space-y-6">
             {children}
           </div>
+        </div>
+
+        <div className="mt-10 flex justify-center">
+          <button
+            onClick={() => window.history.back()}
+            className="px-9 py-2 border-2 border-black text-black font-medium rounded-full hover:bg-black hover:text-white transition"
+          >
+            Voltar
+          </button>
         </div>
       </div>
     </section>
