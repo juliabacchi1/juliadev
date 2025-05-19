@@ -48,7 +48,7 @@ const cards = [
     link: "/blog/design",
   },
   {
-    title: "Mulheres na programação",
+    title: "Heroínas digitais",
     color: "bg-[#F6E3B9]",
     icon: svg7,
     link: "/blog/mulher",

@@ -3,7 +3,7 @@ import PostTemplate from "./PostTemplate";
 export default function PostConsciente() {
   return (
     <PostTemplate
-      title="O que todo dev deveria saber sobre sustentabilidade digital"
+      title="O que todo dev deveria saber e se importar"
       image="/Consciente.jpg"
       date="11/04/2025"
     >
