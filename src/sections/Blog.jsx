@@ -35,16 +35,16 @@ const cards = [
     link: "/blog/series",
   },
   {
-    title: "O que front-end precisa",
+    title: "Seja um front-end",
     color: "bg-[#F05B28]",
     icon: svg5,
-    link: "/blog/novidades",
+    link: "/blog/frontend",
   },
   {
-    title: "Inteligência artificial",
+    title: "Design para devs",
     color: "bg-[#CCE6FF]",
     icon: svg6,
-    link: "/blog/novidades",
+    link: "/blog/design",
   },
   {
     title: "Mulheres na programação",

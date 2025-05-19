@@ -3,6 +3,8 @@ import Portfolio from "./sections/Project";
 import PostLivros from "./components/PostLivros";
 import PostSeries from "./components/PostSeries";
 import PostMulher from "./components/PostMulher";
+import PostFrontEnd from "./components/PostFrontEnd";
+import PostDesign from "./components/PostDesign";
 
 export default function App() {
   return (
@@ -11,6 +13,8 @@ export default function App() {
       <Route path="/blog/livros" element={<PostLivros />} />
       <Route path="/blog/series" element={<PostSeries />} />
       <Route path="/blog/mulher" element={<PostMulher />} />
+      <Route path="/blog/frontend" element={<PostFrontEnd />} />
+      <Route path="/blog/design" element={<PostDesign />} />
     </Routes>
   );
 }
