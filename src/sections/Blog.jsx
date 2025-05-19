@@ -10,17 +10,17 @@ import svg7 from "../assets/blog/7blog.svg";
 
 const cards = [
   {
-    title: "Novidades no mundo tech",
+    title: "Desperte o seu lado consciente",
     color: "bg-[#CCE6FF]",
     icon: svg1,
-    link: "/blog/novidades",
+    link: "/blog/consciente",
     destaque: true,
   },
   {
-    title: "Quero ser programador",
+    title: "Apps que inspiram",
     color: "bg-[#D9B8F4]",
     icon: svg2,
-    link: "/blog/novidades",
+    link: "/blog/apps",
   },
   {
     title: "Leituras necessárias",

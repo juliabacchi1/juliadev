@@ -5,6 +5,8 @@ import PostSeries from "./components/PostSeries";
 import PostMulher from "./components/PostMulher";
 import PostFrontEnd from "./components/PostFrontEnd";
 import PostDesign from "./components/PostDesign";
+import PostConsciente from "./components/PostConsciente";
+import PostApps from "./components/PostApps";
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
       <Route path="/blog/mulher" element={<PostMulher />} />
       <Route path="/blog/frontend" element={<PostFrontEnd />} />
       <Route path="/blog/design" element={<PostDesign />} />
+      <Route path="/blog/consciente" element={<PostConsciente />} />
+      <Route path="/blog/apps" element={<PostApps />} />
     </Routes>
   );
 }
