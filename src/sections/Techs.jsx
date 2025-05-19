@@ -6,6 +6,7 @@ import {
   SiVite,
   SiNextdotjs,
 } from "react-icons/si";
+import FloatingLogo from "../components/FloatingLogo";
 
 const tecnologias = [
   { icon: <FaReact size={80} />, name: "React", link: "https://react.dev/" },
@@ -43,20 +44,7 @@ export default function Techs() {
       id="techs"
       className="fullscreen-section flex flex-col justify-center gap-10 items-center bg-gradient-to-b from-[#8AA9F8] to-[#EFC9DD] text-white"
     >
-      {/* Logo flutuante no topo */}
-      <div className="absolute top-0 left-0 px-4 md:px-6 py-4 md:py-6 z-10">
-        <a
-          href="#home"
-          aria-label="Voltar para o topo"
-          className="flex items-center"
-        >
-          <img
-            src="logo.svg"
-            alt="Logo do portfolio de Julia Bacchi"
-            className="h-10 mr-2 w-auto"
-          />
-        </a>
-      </div>
+      <FloatingLogo />
 
       <h2 className="text-[36px] md:text-[67px] text-center mt-20 mb-4 md:mb-8">
         Tecnologias

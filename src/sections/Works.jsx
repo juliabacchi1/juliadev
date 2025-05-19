@@ -1,4 +1,5 @@
 import { useState } from "react";
+import FloatingLogo from "../components/FloatingLogo";
 
 const Works = () => {
   const projects = [
@@ -40,20 +41,7 @@ const Works = () => {
       id="works"
       className="fullscreen-section bg-white flex flex-col md:flex-row items-center justify-center"
     >
-      {/* Logo flutuante no topo */}
-      <div className="absolute top-0 left-0 px-6 py-6 z-10">
-        <a
-          href="#home"
-          className="flex items-center"
-          aria-label="Voltar para o topo"
-        >
-          <img
-            className="h-10 mr-2 w-auto"
-            src="logo.svg"
-            alt="Logo do portfolio de Julia Bacchi"
-          />
-        </a>
-      </div>
+      <FloatingLogo />
 
       {/* Texto lateral */}
       <div className="w-full md:w-[30%] px-6 my-16 md:my-2 md:mx-10 flex flex-col items-center md:items-start text-left">

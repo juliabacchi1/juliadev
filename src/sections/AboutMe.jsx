@@ -1,23 +1,12 @@
+import FloatingLogo from "../components/FloatingLogo";
+
 export default function AboutMe() {
   return (
     <section
       id="sobre-mim"
       className="fullscreen-section flex flex-col md:flex-row"
     >
-      {/* Logo flutuante no topo */}
-      <div className="absolute top-0 left-0 px-6 py-6 z-10">
-        <a
-          href="#home"
-          aria-label="Voltar para o topo"
-          className="flex items-center"
-        >
-          <img
-            className="h-10 mr-2 w-auto"
-            src="logo.svg"
-            alt="logo do portfolio de Julia Bacchi"
-          />
-        </a>
-      </div>
+      <FloatingLogo />
 
       {/* Lado da imagem */}
       <div className="w-full md:w-1/2 bg-[#FCF5EC] flex justify-center items-center py-10 md:py-0">

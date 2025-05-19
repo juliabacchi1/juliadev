@@ -10,7 +10,7 @@ export default function PostTemplate({ title, image, date, children }) {
         <a
           href="/"
           className="flex items-center"
-          aria-label="Voltar para o topo"
+          aria-label="Voltar para a home"
         >
           <img
             className="h-10 mr-2 w-auto"

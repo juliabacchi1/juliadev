@@ -1,4 +1,5 @@
 import { Mail, Github, Linkedin, Phone } from "iconoir-react";
+import FloatingLogo from "../components/FloatingLogo";
 
 export default function Contato() {
   return (
@@ -7,20 +8,7 @@ export default function Contato() {
       className="fullscreen-section bg-cover bg-center flex flex-col justify-center items-center text-center"
       style={{ backgroundImage: "url('/fundo-contato.png')" }}
     >
-      {/* Logo flutuante no topo */}
-      <div className="absolute top-0 left-0 px-6 py-6 z-10">
-        <a
-          href="#home"
-          className="flex items-center"
-          aria-label="Voltar para o topo"
-        >
-          <img
-            className="h-10 mr-2 w-auto"
-            src="logo.svg"
-            alt="Logo do portfolio de Julia Bacchi"
-          />
-        </a>
-      </div>
+      <FloatingLogo />
 
       {/* Título e subtítulo */}
       <h2 className="font-serif text-[45px] md:text-[88px] mb-2 md:mb-0 text-[#156669]">

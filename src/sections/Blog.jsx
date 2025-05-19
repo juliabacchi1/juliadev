@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import FloatingLogo from "../components/FloatingLogo";
 
 import svg1 from "../assets/blog/1blog.svg";
 import svg2 from "../assets/blog/2blog.svg";
@@ -95,20 +96,7 @@ export default function Blog() {
       id="blog"
       className="fullscreen-section bg-[#FDF3DD] w-full py-12 px-4 sm:py-16 sm:px-6"
     >
-      {/* Logo flutuante no topo */}
-      <div className="absolute top-0 left-0 px-6 py-6 z-10">
-        <a
-          href="#home"
-          className="flex items-center"
-          aria-label="Voltar para o topo"
-        >
-          <img
-            className="h-10 mr-2 w-auto"
-            src="logo.svg"
-            alt="Logo do portfolio de Julia Bacchi"
-          />
-        </a>
-      </div>
+      <FloatingLogo />
 
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-wrap lg:flex-nowrap gap-4">
