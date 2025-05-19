@@ -9,7 +9,7 @@ export default function Project() {
     <>
       <main
         id="home"
-        className="min-h-[100dvh] md:min-h-screen relative bg-gradient-to-r from-[#E2F4F3] to-[#C9D6FF] text-gray-800 p-4"
+        className="fullscreen-section bg-gradient-to-r from-[#E2F4F3] to-[#C9D6FF] text-gray-800 p-4"
       >
         {/* Logo header */}
         <div className="p-2 flex items-center">
@@ -21,7 +21,7 @@ export default function Project() {
             <img
               className="h-10 mr-2 w-auto"
               src="logo.svg"
-              alt="Logo do portfólio de Julia Bacchi"
+              alt="Logo do portfolio de Julia Bacchi"
             />
             <p className="font-semibold">Portfolio Julia Bacchi</p>
           </a>

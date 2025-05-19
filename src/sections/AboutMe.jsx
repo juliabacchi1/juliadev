@@ -11,7 +11,7 @@ export default function AboutMe() {
       {/* Lado da imagem */}
       <div className="w-full md:w-1/2 bg-[#FCF5EC] flex justify-center items-center py-10 md:py-0">
         <img
-          src="foto.jpg"
+          src="foto.webp"
           alt="foto de Julia Bacchi"
           className="h-72 md:h-[80%] object-contain"
         />
