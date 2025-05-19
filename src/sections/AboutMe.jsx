@@ -4,26 +4,37 @@ export default function AboutMe() {
       id="sobre-mim"
       className="fullscreen-section flex flex-col md:flex-row"
     >
+      {/* Logo flutuante no topo */}
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
-        <a href="#home" className="flex items-center">
-          <img className="h-10 mr-2 w-auto" src="logo.svg" alt="logo" />
+        <a
+          href="#home"
+          aria-label="Voltar para o topo"
+          className="flex items-center"
+        >
+          <img
+            className="h-10 mr-2 w-auto"
+            src="logo.svg"
+            alt="logo do portfolio de Julia Bacchi"
+          />
         </a>
       </div>
 
+      {/* Lado da imagem */}
       <div className="w-full md:w-1/2 bg-[#FCF5EC] flex justify-center items-center py-10 md:py-0">
         <img
           src="foto.png"
-          alt="Júlia Bacchi"
+          alt="foto de Julia Bacchi"
           className="h-72 md:h-[80%] object-contain"
         />
       </div>
 
+      {/* Lado do texto */}
       <div className="w-full md:w-1/2 bg-[#EEA595] flex flex-col justify-center items-start py-8">
         <div className=" md:p-8 mx-8 text-start">
           <h2 className="font-serif text-[#BA4B2E] text-2xl md:text-6xl mb-6 px-8 leading-snug text-center md:text-left">
             Olá, seja <br className="hidden md:block" /> bem-vindo
           </h2>
-          <p className="text-base text-[13px] md:text-[16.5px] text-gray-800 mb-8 md:px-8 text-center md:text-left">
+          <p className="md:text-[16.5px] text-gray-800 mb-8 md:px-8 text-center md:text-left">
             Sou Júlia Bacchi, desenvolvedora front-end, libriana, mãe de pet e
             apaixonada por inovação digital. Acredito que a tecnologia deve ser
             intuitiva, impactante e uma força para o bem.

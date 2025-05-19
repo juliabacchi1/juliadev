@@ -4,22 +4,25 @@ export default function Contato() {
   return (
     <section
       id="contato"
-      className="fullscreen-section bg-cover bg-center flex flex-col justify-center items-center"
+      className="fullscreen-section bg-cover bg-center flex flex-col justify-center items-center text-center"
       style={{ backgroundImage: "url('/fundo-contato.png')" }}
     >
+      {/* Logo flutuante no topo */}
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
         <a href="#home" className="flex items-center">
           <img className="h-10 mr-2 w-auto" src="logo.svg" alt="logo" />
         </a>
       </div>
 
-      <h2 className="font-serif text-[45px] md:text-[88px] text-[#156669] text-center">
+      {/* Título e subtítulo */}
+      <h2 className="font-serif text-[45px] md:text-[88px] mb-2 md:mb-0 text-[#156669]">
         E agora?!
       </h2>
-      <p className="text-[18px] md:text-[35px] text-center text-gray-800">
+      <p className="text-[18px] md:text-[35px] text-gray-800">
         Bora trabalhar juntos
       </p>
 
+      {/* Ícones de contato */}
       <div className="flex gap-4 md:gap-6 m-7">
         <a
           href="https://wa.me/48991779743?text=Oi%20"
@@ -53,6 +56,7 @@ export default function Contato() {
         </a>
       </div>
 
+      {/* Botão para blog */}
       <div className="mt-10">
         <a href="#blog" className="flex items-center">
           <button className="bg-[#EAE0D4] font-semibold px-9 py-3 rounded-full shadow hover:bg-white">

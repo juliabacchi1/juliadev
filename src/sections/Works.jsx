@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Techs = () => {
+const Works = () => {
   const projects = [
     {
       name: "ecotasks",
@@ -29,62 +29,70 @@ const Techs = () => {
   ];
 
   const [index, setIndex] = useState(0);
+  const { name, description, view, alt, link } = projects[index];
 
   const nextProject = () => {
     setIndex((prev) => (prev + 1) % projects.length);
   };
 
-  const { name, description, view, alt, link } = projects[index];
-
   return (
     <section
       id="works"
-      className="fullscreen-section bg-white flex flex-col md:flex-row justify-between items-center"
+      className="fullscreen-section bg-white flex flex-col md:flex-row items-center justify-center"
     >
+      {/* Logo flutuante no topo */}
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
         <a href="#home" className="flex items-center">
           <img className="h-10 mr-2 w-auto" src="logo.svg" alt="logo" />
         </a>
       </div>
 
-      <div className="w-full md:w-[30%] px-0 md:px-6 my-20 md:my-2 md:mx-10 flex flex-col justify-center items-center md:items-start text-left mb-10 md:mb-0">
-        <h2 className="text-[36px] md:text-[67px] px-10 mb-4">Trabalhos</h2>
-        <p className="text-[16.5px] px-10 text-gray-700 mb-8 max-w-md">
+      {/* Texto lateral */}
+      <div className="w-full md:w-[30%] px-6 my-16 md:my-2 md:mx-10 flex flex-col items-center md:items-start text-left">
+        <h2 className="text-[36px] md:text-[67px] mb-4">Trabalhos</h2>
+        <p className="text-[16.5px] text-center md:text-start text-gray-700 mb-8 max-w-md">
           Alguns dos meus projetos <br /> entregues e apps white label.
         </p>
-        <div className="flex flex-wrap gap-4 px-10 ">
+        <div className="flex flex-wrap gap-4">
           <button
             onClick={nextProject}
-            className="bg-[#F6F7EC] font-semibold px-9 py-3 rounded-full shadow hover:bg-[#EAE0D4]"
+            className="bg-[#F6F7EC] font-semibold px-9 py-3 rounded-full shadow hover:bg-[#EAE0D4] transition"
           >
             ver mais
           </button>
-          <a href="#contato" className="flex items-center">
-            <button className="bg-[#EAE0D4] font-regular px-7 py-3 rounded-full shadow hover:bg-[#F6F7EC]">
+          <a href="#contato">
+            <button className="bg-[#EAE0D4] font-regular px-7 py-3 rounded-full shadow hover:bg-[#F6F7EC] transition">
               me chama
             </button>
           </a>
         </div>
       </div>
 
-      <div className="w-full md:w-[40%] flex justify-center items-center px-4 my-0">
-        <a href={link} target="_blank" rel="noreferrer">
+      <div className="w-full md:w-[70%] flex flex-col md:flex-row items-center md:items-start px-6 md:px-12 gap-6">
+        {/* Imagem */}
+        <a
+          href={link}
+          target="_blank"
+          rel="noreferrer"
+          className="w-full md:w-1/2"
+        >
           <img
             src={view}
             alt={alt}
-            className="w-[80%] h-auto object-contain mx-auto md:mx-0"
+            className="w-full h-auto object-contain"
           />
         </a>
-      </div>
 
-      <div className="w-full md:w-[30%] px-10 md:px-6 flex flex-col justify-center items-center md:items-start text-left my-10 md:my-0">
-        <h2 className="text-[28px] md:text-[30px] font-bold mb-4">{name}</h2>
-        <p className="text-[15px] md:text-[14px] text-gray-700 mb-6 ">
-          {description}
-        </p>
+        {/* Descrição */}
+        <div className="w-full md:w-1/2 flex flex-col justify-start items-center md:items-start text-left mt-4 md:mt-4 pr-0 md:pr-12">
+          <h3 className="text-[24px] md:text-[30px] font-bold mb-3">{name}</h3>
+          <p className="text-[15px] md:text-[14px] text-center md:text-start text-gray-700 pb-10">
+            {description}
+          </p>
+        </div>
       </div>
     </section>
   );
 };
 
-export default Techs;
+export default Works;
