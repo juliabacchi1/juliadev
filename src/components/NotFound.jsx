@@ -5,6 +5,7 @@ export default function NotFound() {
     <div className="min-h-screen bg-[#8c82b3] flex flex-col items-center justify-center text-center p-6">
       <img
         src={NotFoundImg}
+        loading="lazy"
         alt="Erro 404 - Página não encontrada"
         className="w-60 md:w-72 h-auto mb-10"
       />
