@@ -58,7 +58,7 @@ export default function Techs() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Acesse a documentação de ${tech.name}`}
-            className="flex flex-col items-center hover:scale-105 transition-transform duration-300"
+            className="flex flex-col items-center hover:scale-105 transition-transform"
           >
             <div className="mb-2">{tech.icon}</div>
             <span className="text-sm md:text-base font-semibold">

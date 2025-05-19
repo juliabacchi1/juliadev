@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import NotFound from "./components/NotFound";
 
 import Portfolio from "./sections/Project";
 import PostLivros from "./components/PostLivros";
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/blog/design" element={<PostDesign />} />
         <Route path="/blog/consciente" element={<PostConsciente />} />
         <Route path="/blog/apps" element={<PostApps />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
