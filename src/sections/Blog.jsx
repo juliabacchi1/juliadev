@@ -50,7 +50,7 @@ const cards = [
     title: "Mulheres na programação",
     color: "bg-[#F6E3B9]",
     icon: svg7,
-    link: "/blog/novidades",
+    link: "/blog/mulher",
   },
 ];
 

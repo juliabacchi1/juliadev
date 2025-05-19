@@ -1,6 +1,6 @@
 import PostTemplate from "./PostTemplate";
 
-export default function PostLivros() {
+export default function PostSeries() {
   return (
     <PostTemplate
       title="3 séries que te deixam pensando por dias"
@@ -18,20 +18,20 @@ export default function PostLivros() {
         o que significa estar vivo (ou algo perto disso).
       </p>
       <p>
-        <strong>Devs (Apple TV+):</strong> Minimalista, silenciosa e
+        <strong>1. Devs (Apple TV+):</strong> Minimalista, silenciosa e
         hipnotizante. Devs começa como um thriller de tecnologia e vira uma
         meditação sobre livre-arbítrio, física quântica e luto. É daquelas que
         pede silêncio depois do último episódio. E talvez uma caminhada longa.
       </p>
       <p>
-        <strong>Severance / Ruptura (Apple TV+):</strong> Você aceitaria dividir
+        <strong>2. Severance / Ruptura (Apple TV+):</strong> Você aceitaria dividir
         sua mente entre “trabalho” e “vida pessoal”? Em Severance, essa divisão
         é literal. Uma premissa genial que vai ganhando camadas e um desconforto
         crescente. É sobre trabalho, sim — mas também sobre identidade, trauma e
         fuga.
       </p>
       <p>
-        <strong>Station Eleven (HBO Max):</strong> Uma pandemia devasta o mundo
+        <strong>3. Station Eleven (HBO Max):</strong> Uma pandemia devasta o mundo
         (sim, a gente passou por isso). Mas em vez de focar no caos, essa série
         olha para o que permanece: arte, memória, conexão. É poética, sensível e
         esperançosa, sem ser ingênua. E o final... nossa.
