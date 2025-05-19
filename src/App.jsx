@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+
 import Portfolio from "./sections/Project";
 import PostLivros from "./components/PostLivros";
 import PostSeries from "./components/PostSeries";
@@ -10,15 +12,18 @@ import PostApps from "./components/PostApps";
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Portfolio />} />
-      <Route path="/blog/livros" element={<PostLivros />} />
-      <Route path="/blog/series" element={<PostSeries />} />
-      <Route path="/blog/mulher" element={<PostMulher />} />
-      <Route path="/blog/frontend" element={<PostFrontEnd />} />
-      <Route path="/blog/design" element={<PostDesign />} />
-      <Route path="/blog/consciente" element={<PostConsciente />} />
-      <Route path="/blog/apps" element={<PostApps />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/blog/livros" element={<PostLivros />} />
+        <Route path="/blog/series" element={<PostSeries />} />
+        <Route path="/blog/mulher" element={<PostMulher />} />
+        <Route path="/blog/frontend" element={<PostFrontEnd />} />
+        <Route path="/blog/design" element={<PostDesign />} />
+        <Route path="/blog/consciente" element={<PostConsciente />} />
+        <Route path="/blog/apps" element={<PostApps />} />
+      </Routes>
+    </>
   );
 }
