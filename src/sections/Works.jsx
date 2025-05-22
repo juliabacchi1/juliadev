@@ -4,6 +4,14 @@ import FloatingLogo from "../components/FloatingLogo";
 const Works = () => {
   const projects = [
     {
+      name: "Bora!",
+      description:
+        "Um app de checklist de viagem com interface visual e intuitiva. Crie e organize listas com itens por categoria. Desenvolvido com React, TailwindCSS e Vite.",
+      view: "/bora.png",
+      alt: "Visualização Bora!",
+      link: "https://bora-app-jet.vercel.app/",
+    },
+    {
       name: "ecotasks",
       description:
         "Um app de desafios sustentáveis que ajuda a reduzir a pegada de carbono com ações diárias simples. Desenvolvido com React, TailwindCSS e Vite.",
