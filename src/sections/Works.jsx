@@ -106,7 +106,7 @@ const Works = () => {
 
         {/* Descrição */}
         <div className="w-full md:w-1/2 flex flex-col justify-start items-center md:items-start text-left mt-2 md:mt-0 pr-0 md:pr-4 lg:pr-8">
-          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2 md:mb-3">
+          <h3 className="text-xl md:text-xl lg:text-2xl font-semibold mb-2 md:mb-3">
             {name}
           </h3>
           <p className="text-sm md:text-base text-center md:text-start text-gray-700 pb-6 md:pb-8 lg:pb-10">

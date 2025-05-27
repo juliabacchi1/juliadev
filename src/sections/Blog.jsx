@@ -1,67 +1,66 @@
 import { Link } from "react-router-dom";
 import FloatingLogo from "../components/FloatingLogo";
+import Button from "../components/Button";
 
-import svg1 from "../assets/blog/1blog.svg";
-import svg2 from "../assets/blog/2blog.svg";
-import svg3 from "../assets/blog/3blog.svg";
-import svg4 from "../assets/blog/4blog.svg";
-import svg5 from "../assets/blog/5blog.svg";
-import svg6 from "../assets/blog/6blog.svg";
-import svg7 from "../assets/blog/7blog.svg";
+const iconModules = import.meta.glob("../assets/blog/*.svg", { eager: true });
 
 const cards = [
   {
     title: "Desperte o seu lado consciente",
-    color: "bg-[#CCE6FF]",
-    icon: svg1,
+    color: "bg-blog-blue",
+    icon: iconModules["../assets/blog/1blog.svg"].default,
     link: "/blog/consciente",
     destaque: true,
   },
   {
     title: "Apps que inspiram",
-    color: "bg-[#D9B8F4]",
-    icon: svg2,
+    color: "bg-blog-purple",
+    icon: iconModules["../assets/blog/2blog.svg"].default,
     link: "/blog/apps",
   },
   {
     title: "Leituras necessárias",
-    color: "bg-[#D8A137]",
-    icon: svg3,
+    color: "bg-blog-yellow",
+    icon: iconModules["../assets/blog/3blog.svg"].default,
     link: "/blog/livros",
   },
   {
     title: "Séries imperdíveis",
-    color: "bg-[#F05B28]",
-    icon: svg4,
+    color: "bg-blog-orange",
+    icon: iconModules["../assets/blog/4blog.svg"].default,
     link: "/blog/series",
   },
   {
     title: "Seja um front-end",
-    color: "bg-[#F05B28]",
-    icon: svg5,
+    color: "bg-blog-orange",
+    icon: iconModules["../assets/blog/5blog.svg"].default,
     link: "/blog/frontend",
   },
   {
     title: "Design para devs",
-    color: "bg-[#CCE6FF]",
-    icon: svg6,
+    color: "bg-blog-blue",
+    icon: iconModules["../assets/blog/6blog.svg"].default,
     link: "/blog/design",
   },
   {
     title: "Heroínas digitais",
-    color: "bg-[#F6E3B9]",
-    icon: svg7,
+    color: "bg-blog-cream",
+    icon: iconModules["../assets/blog/7blog.svg"].default,
     link: "/blog/mulher",
   },
 ];
 
-function CardBlog({ card, isFeatured }) {
+function CardBlog({ card, isFeatured = false }) {
   return (
-    <Link to={card.link}>
+    <Link
+      to={card.link}
+      aria-label={`Ler ${card.title}`}
+      className="block h-full"
+    >
       <div
         className={`rounded-xl ${
           card.color
-        } relative flex flex-col justify-center ${
+        } relative flex flex-col justify-center transition-transform hover:scale-[1.02] ${
           isFeatured ? "mt-4 sm:mt-5 py-6 sm:py-20" : "py-6 px-4 min-h-[200px]"
         }`}
       >
@@ -73,15 +72,15 @@ function CardBlog({ card, isFeatured }) {
           alt={card.title}
           className={`mx-auto ${isFeatured ? "w-24 sm:w-32" : "w-20 sm:w-32"}`}
         />
-        <div
+        <h3
           className={`text-center font-serif font-bold text-white ${
             isFeatured
-              ? "pt-2 md:pt-4 text-[24px] md:text-[40px] leading-none mt-4"
-              : "pt-6 text-[24px] md:text-[40px] leading-none mb-4"
+              ? "pt-2 md:pt-4 text-2xl md:text-4xl leading-none mt-4"
+              : "pt-6 text-2xl md:text-4xl leading-none mb-4"
           }`}
         >
           {card.title}
-        </div>
+        </h3>
       </div>
     </Link>
   );
@@ -94,21 +93,19 @@ export default function Blog() {
   return (
     <section
       id="blog"
-      className="fullscreen-section bg-[#FDF3DD] w-full py-12 px-4 sm:py-16 sm:px-6"
+      className="fullscreen-section bg-blog-primary w-full py-12 px-4 sm:py-16 sm:px-6"
     >
       <FloatingLogo />
 
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-wrap lg:flex-nowrap gap-4">
           {/* Lateral esquerda */}
-          <div className="w-full lg:w-1/4 flex flex-col gap-6 sm:gap-8">
+          <div className="w-full lg:w-1/4 flex flex-col gap-6 sm:gap-10">
             <div className="flex flex-col items-center px-2 sm:px-0">
-              <h2 className="text-[36px] md:text-[67px]">Blog</h2>
-              <a href="#home">
-                <button className="bg-white mt-5 md:mt-3 text-sm font-semibold px-9 py-3 rounded-full shadow hover:bg-gray-100">
-                  volte aqui
-                </button>
-              </a>
+              <h2 className="text-4xl md:text-6xl lg:text-7xl mb-8">Blog</h2>
+              <Button href="#home" className="bg-white hover:bg-gray-100">
+                volte aqui
+              </Button>
             </div>
 
             {destaque && <CardBlog card={destaque} isFeatured />}

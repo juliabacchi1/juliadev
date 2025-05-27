@@ -4,6 +4,12 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      minHeight: {
+        screen: "100vh",
+      },
+      height: {
+        screen: "100vh",
+      },
       fontFamily: {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
         serif: ["Gloock", ...defaultTheme.fontFamily.serif],
@@ -13,22 +19,20 @@ module.exports = {
         "5.5xl": "3.5rem", // 56px
       },
       colors: {
-        // Cores principais (baseadas nos valores hex que você está usando)
         primary: {
-          50: "#F6F7EC", // Seu bege claro
-          100: "#EAE0D4", // Seu bege
-          500: "#156669", // Seu verde-água escuro
-          800: "#1F2937", // Seu cinza escuro (padrão Tailwind gray-800)
+          50: "#F6F7EC", // bege claro
+          100: "#EAE0D4", // bege
+          500: "#156669", // verde-água escuro
+          800: "#1F2937", // cinza escuro (padrão Tailwind gray-800)
         },
-        // Extensão da paleta (opcional)
-        secondary: {
-          400: "#4FD1C5", // Verde-água claro (sugestão)
-          600: "#285E61", // Tom intermediário (sugestão)
+        blog: {
+          primary: "#FDF3DD",
+          blue: "#CCE6FF",
+          purple: "#D9B8F4",
+          yellow: "#D8A137",
+          orange: "#F05B28",
+          cream: "#F6E3B9",
         },
-      },
-      // Extras úteis (opcional)
-      backgroundImage: {
-        "contact-pattern": "url('/fundo-contato.png')",
       },
     },
   },
