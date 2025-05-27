@@ -52,7 +52,7 @@ export default function Contato() {
         ))}
       </div>
 
-      <Button href="#blog" className="bg-primary-100 hover:bg-white mt-10">
+      <Button href="#blog" className="bg-work-100 hover:bg-white mt-10">
         blog tech
       </Button>
     </section>

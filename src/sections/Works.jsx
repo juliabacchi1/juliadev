@@ -73,11 +73,11 @@ const Works = () => {
         <div className="flex flex-wrap gap-4">
           <Button
             onClick={nextProject}
-            className="bg-primary-50 hover:bg-primary-100 px-9"
+            className="bg-work-50 hover:bg-work-100 px-9"
           >
             ver mais
           </Button>
-          <Button href="#contato" className="bg-primary-100 hover:bg-primary-50">
+          <Button href="#contato" className="bg-work-100 hover:bg-work-50 font-normal">
             me chama
           </Button>
         </div>

@@ -20,14 +20,21 @@ module.exports = {
       },
       colors: {
         primary: {
-          50: "#F6F7EC", // bege claro
-          100: "#EAE0D4", // bege
           500: "#156669", // verde-água escuro
           800: "#1F2937", // cinza escuro (padrão Tailwind gray-800)
+        },
+        about: {
+          left: "#FCF5EC",
+          right: "#EEA595",
+          red: "#BA4B2E",
         },
         tech: {
           start: "#8AA9F8",
           end: "#EFC9DD",
+        },
+        work: {
+          50: "#F6F7EC",
+          100: "#EAE0D4",
         },
         blog: {
           primary: "#FDF3DD",
