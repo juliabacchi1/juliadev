@@ -3,25 +3,28 @@ import Techs from "./Techs";
 import Works from "./Works";
 import Contato from "./Contato";
 import Blog from "./Blog";
+import Button from "../components/Button";
 
 export default function Project() {
   return (
     <>
       <main
         id="home"
-        className="fullscreen-section bg-gradient-to-r from-[#E2F4F3] to-[#C9D6FF] text-gray-800 p-4 pb-40"
+        className="fullscreen-section bg-gradient-to-r from-home-start to-home-end text-gray-800 p-4 pb-40"
       >
         {/* Logo header */}
         <div className="p-2 flex items-center">
           <a
             href="/"
-            aria-label="Ir para a página inicial"
-            className="flex items-center"
+            aria-label="Página inicial"
+            className="flex items-center group"
           >
             <img
               className="h-10 mr-2 w-auto"
               src="logo.svg"
-              alt="Logo do portfolio de Julia Bacchi"
+              alt="Logo Julia Bacchi"
+              width="40"
+              height="40"
             />
             <p className="font-semibold">Portfolio Julia Bacchi</p>
           </a>
@@ -36,27 +39,30 @@ export default function Project() {
             </h1>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <a href="#sobre-mim">
-                <button className="bg-white text-sm font-semibold px-8 py-3 rounded-full shadow hover:bg-gray-100">
-                  sobre mim
-                </button>
-              </a>
+              <Button
+                href="#sobre-mim"
+                className="bg-white hover:bg-gray-100 px-9"
+              >
+                sobre mim
+              </Button>
 
-              <a
+              <Button
                 href="curriculo.pdf"
                 download
-                className="bg-gray-100 text-sm font-normal px-5 py-3 rounded-full shadow hover:bg-white/100"
+                className="bg-gray-100 hover:bg-white font-normal"
               >
                 meu currículo
-              </a>
+              </Button>
             </div>
           </div>
 
           <img
             src="home.png"
-            alt="Ilustração de computador vintage, estilo retrô"
+            alt="Ilustração de computador vintage"
             loading="lazy"
-            className="w-44 md:w-96 h-auto mx-auto md:mx-0 -mt-8 sm:-mt-10"
+            className="w-[200px] md:w-[380px] lg:w-[400px] h-auto mx-auto md:mx-0 -mt-8 md:-mt-12"
+            width="400"
+            height="400"
           />
         </header>
       </main>

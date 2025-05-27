@@ -14,14 +14,14 @@ module.exports = {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
         serif: ["Gloock", ...defaultTheme.fontFamily.serif],
       },
-      fontSize: {
-        "4.5xl": "2.75rem", // 44px
-        "5.5xl": "3.5rem", // 56px
-      },
       colors: {
         primary: {
           500: "#156669", // verde-água escuro
           800: "#1F2937", // cinza escuro (padrão Tailwind gray-800)
+        },
+        home: {
+          start: "#E2F4F3",
+          end: "#C9D6FF",
         },
         about: {
           left: "#FCF5EC",
