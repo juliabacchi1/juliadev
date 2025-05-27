@@ -7,32 +7,35 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 import FloatingLogo from "../components/FloatingLogo";
+import Button from "../components/Button";
+
+const icon_size = 80;
 
 const tecnologias = [
-  { icon: <FaReact size={80} />, name: "React", link: "https://react.dev/" },
+  { icon: <FaReact size={icon_size} />, name: "React", link: "https://react.dev/" },
   {
-    icon: <SiNextdotjs size={80} />,
+    icon: <SiNextdotjs size={icon_size} />,
     name: "Next.js",
     link: "https://nextjs.org/",
   },
-  { icon: <SiVite size={80} />, name: "Vite", link: "https://vitejs.dev/" },
+  { icon: <SiVite size={icon_size} />, name: "Vite", link: "https://vitejs.dev/" },
   {
-    icon: <SiTypescript size={80} />,
+    icon: <SiTypescript size={icon_size} />,
     name: "TypeScript",
     link: "https://www.typescriptlang.org/",
   },
   {
-    icon: <AiOutlineJavaScript size={80} />,
+    icon: <AiOutlineJavaScript size={icon_size} />,
     name: "JavaScript",
     link: "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
   },
   {
-    icon: <SiTailwindcss size={80} />,
+    icon: <SiTailwindcss size={icon_size} />,
     name: "TailwindCSS",
     link: "https://tailwindcss.com/",
   },
   {
-    icon: <FaFigma size={80} />,
+    icon: <FaFigma size={icon_size} />,
     name: "Figma",
     link: "https://www.figma.com/",
   },
@@ -42,15 +45,15 @@ export default function Techs() {
   return (
     <section
       id="techs"
-      className="fullscreen-section flex flex-col justify-center gap-10 items-center bg-gradient-to-b from-[#8AA9F8] to-[#EFC9DD] text-white"
+      className="fullscreen-section flex flex-col justify-center gap-10 items-center bg-gradient-to-b from-tech-start to-tech-end text-white"
     >
       <FloatingLogo />
 
-      <h2 className="text-[36px] md:text-[67px] text-center mt-20 mb-4 md:mb-8">
+      <h2 className="text-4xl md:text-6xl lg:text-7xl text-center m-8">
         Tecnologias
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-8 md:gap-12 max-w-5xl px-4 text-white">
+      <div className="flex flex-wrap justify-center gap-6 md:gap-10 max-w-5xl px-4 text-white">
         {tecnologias.map((tech, index) => (
           <a
             key={index}
@@ -67,13 +70,10 @@ export default function Techs() {
           </a>
         ))}
       </div>
-
-      <div className="mt-4 md:mt-12 mb-8 md:mb-12">
-        <a href="#works">
-          <button className="bg-white text-black font-semibold px-9 py-3 rounded-full shadow hover:bg-gray-100">
-            trabalhos
-          </button>
-        </a>
+      <div className="m-8">
+        <Button href="#works" className="bg-white hover:bg-gray-100 text-black py-4 px-8">
+          trabalhos
+        </Button>
       </div>
     </section>
   );

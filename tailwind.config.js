@@ -25,6 +25,10 @@ module.exports = {
           500: "#156669", // verde-água escuro
           800: "#1F2937", // cinza escuro (padrão Tailwind gray-800)
         },
+        tech: {
+          start: "#8AA9F8",
+          end: "#EFC9DD",
+        },
         blog: {
           primary: "#FDF3DD",
           blue: "#CCE6FF",
