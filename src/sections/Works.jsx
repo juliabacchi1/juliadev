@@ -7,15 +7,23 @@ const Works = () => {
       name: "Bora!",
       description:
         "Um app de checklist de viagem com interface visual e intuitiva. Crie e organize listas com itens por categoria. Desenvolvido com React, TailwindCSS e Vite.",
-      view: "/bora.png",
+      view: "/bora.webp",
       alt: "Visualização Bora!",
       link: "https://bora-app-jet.vercel.app/",
+    },
+    {
+      name: "Portal Rick and Morty",
+      description:
+        "Exploração interativa do multiverso com quiz, galeria de personagens via API, filtros, gamificação e estado global com contexto. Desenvolvido com React, TailwindCSS e Vite.",
+      view: "/rickandmorty.webp",
+      alt: "Visualização Portal Rick and Morty",
+      link: "https://portal-rickandmorty.vercel.app/",
     },
     {
       name: "ecotasks",
       description:
         "Um app de desafios sustentáveis que ajuda a reduzir a pegada de carbono com ações diárias simples. Desenvolvido com React, TailwindCSS e Vite.",
-      view: "/ecotasks-v.png",
+      view: "/ecotasks.webp",
       alt: "Visualização ecotasks",
       link: "https://ecotasks.vercel.app/",
     },
@@ -23,15 +31,15 @@ const Works = () => {
       name: "Rota Baleia Franca",
       description:
         "Landing page institucional para rota turística no litoral de Santa Catarina. Design acessível, responsivo e com performance otimizada. Desenvolvido com WordPress.",
-      view: "/rota-v.png",
+      view: "/rotabaleia.webp",
       alt: "Visualização Baleia Franca",
       link: "https://rotabaleiafranca.com.br/",
     },
     {
-      name: "Recipes Generator",
+      name: "Kitchen Assistant",
       description:
         "Gerador de receitas com IA, onde o usuário insere ingredientes disponíveis e recebe sugestões criativas. Desenvolvido com JavaScript, OpenAI API e Netlify.",
-      view: "/recipes-v.png",
+      view: "/recipes.webp",
       alt: "Visualização Recipes Generator",
       link: "https://recipes-generator-ai.netlify.app/",
     },
@@ -72,21 +80,29 @@ const Works = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-[70%] flex flex-col md:flex-row items-center md:items-start px-6 md:px-12 gap-6">
-        {/* Imagem */}
+      <div className="w-full md:w-[70%] flex flex-col md:flex-row items-center md:items-start px-4 md:px-8 lg:px-12 gap-6">
+        {/* Container da Imagem */}
         <a
           href={link}
           target="_blank"
-          rel="noreferrer"
-          className="w-full md:w-1/2"
+          rel="noopener noreferrer"
+          className="w-full md:w-1/2 flex justify-center"
         >
-          <img src={view} alt={alt} className="w-full h-auto object-contain" />
+          <img
+            src={view}
+            alt={alt}
+            className="w-full h-auto max-h-[400px] md:max-h-[500px] lg:max-h-[600px] object-contain"
+            loading="lazy"
+            decoding="async"
+          />
         </a>
 
         {/* Descrição */}
-        <div className="w-full md:w-1/2 flex flex-col justify-start items-center md:items-start text-left mt-4 md:mt-4 pr-0 md:pr-12">
-          <h3 className="text-[24px] md:text-[30px] font-bold mb-3">{name}</h3>
-          <p className="text-[15px] md:text-[14px] text-center md:text-start text-gray-700 pb-10">
+        <div className="w-full md:w-1/2 flex flex-col justify-start items-center md:items-start text-left mt-2 md:mt-0 pr-0 md:pr-4 lg:pr-8">
+          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2 md:mb-3">
+            {name}
+          </h3>
+          <p className="text-sm md:text-base text-center md:text-start text-gray-700 pb-6 md:pb-8 lg:pb-10">
             {description}
           </p>
         </div>
