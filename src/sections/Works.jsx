@@ -1,6 +1,16 @@
 import { useState } from "react";
 import FloatingLogo from "../components/FloatingLogo";
 
+const Button = ({ children, onClick, className = "", ...props }) => (
+  <button
+    className={`font-medium px-7 py-3 rounded-full shadow transition ${className}`}
+    onClick={onClick}
+    {...props}
+  >
+    {children}
+  </button>
+);
+
 const Works = () => {
   const projects = [
     {
@@ -58,30 +68,39 @@ const Works = () => {
       className="fullscreen-section bg-white flex flex-col md:flex-row items-center justify-center"
     >
       <FloatingLogo />
-
+      <link
+        rel="preload"
+        href={projects[(index + 1) % projects.length].view}
+        as="image"
+      />
       {/* Texto lateral */}
-      <div className="w-full md:w-[30%] px-6 my-16 md:my-2 md:mx-10 flex flex-col items-center md:items-start text-left">
-        <h2 className="text-[36px] md:text-[67px] mb-4">Trabalhos</h2>
-        <p className="text-[16.5px] text-center md:text-start text-gray-700 mb-8 max-w-md">
+      <div className="w-full md:w-[30%] px-6 my-16 mb-4 md:my-2 md:mx-10 flex flex-col items-center md:items-start text-left">
+        <h2 className="text-4xl md:text-6xl lg:text-7xl mb-6">Trabalhos</h2>
+        <p className="text-base md:text-lg text-center md:text-start text-gray-700 mb-8 max-w-md">
           Alguns dos meus projetos <br /> entregues e apps white label.
         </p>
         <div className="flex flex-wrap gap-4">
-          <button
+          <Button
             onClick={nextProject}
-            className="bg-[#F6F7EC] font-semibold px-9 py-3 rounded-full shadow hover:bg-[#EAE0D4] transition"
+            className="bg-[#F6F7EC] hover:bg-[#EAE0D4] px-9"
+            aria-label="Próximo projeto"
           >
             ver mais
-          </button>
+          </Button>
           <a href="#contato">
-            <button className="bg-[#EAE0D4] font-regular px-7 py-3 rounded-full shadow hover:bg-[#F6F7EC] transition">
+            <Button className="bg-[#EAE0D4] hover:bg-[#F6F7EC]">
               me chama
-            </button>
+            </Button>
           </a>
         </div>
+
+        <p className="text-sm text-gray-500 mt-6">
+          {index + 1}/{projects.length}
+        </p>
       </div>
 
+      {/* Conteúdo principal */}
       <div className="w-full md:w-[70%] flex flex-col md:flex-row items-center md:items-start px-4 md:px-8 lg:px-12 gap-6">
-        {/* Container da Imagem */}
         <a
           href={link}
           target="_blank"
