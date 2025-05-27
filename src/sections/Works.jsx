@@ -1,15 +1,6 @@
 import { useState } from "react";
 import FloatingLogo from "../components/FloatingLogo";
-
-const Button = ({ children, onClick, className = "", ...props }) => (
-  <button
-    className={`font-medium px-7 py-3 rounded-full shadow transition ${className}`}
-    onClick={onClick}
-    {...props}
-  >
-    {children}
-  </button>
-);
+import Button from "../components/Button";
 
 const Works = () => {
   const projects = [
@@ -83,15 +74,12 @@ const Works = () => {
           <Button
             onClick={nextProject}
             className="bg-[#F6F7EC] hover:bg-[#EAE0D4] px-9"
-            aria-label="Próximo projeto"
           >
             ver mais
           </Button>
-          <a href="#contato">
-            <Button className="bg-[#EAE0D4] hover:bg-[#F6F7EC]">
-              me chama
-            </Button>
-          </a>
+          <Button href="#contato" className="bg-[#EAE0D4] hover:bg-[#F6F7EC]">
+            me chama
+          </Button>
         </div>
 
         <p className="text-sm text-gray-500 mt-6">
