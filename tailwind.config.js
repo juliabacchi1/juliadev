@@ -10,14 +10,16 @@ module.exports = {
       height: {
         screen: "100vh",
       },
+      screens: {
+        "macbook-air": "1440px",
+      },
       fontFamily: {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
         serif: ["Gloock", ...defaultTheme.fontFamily.serif],
       },
       colors: {
         primary: {
-          500: "#156669", // verde-água escuro
-          800: "#1F2937", // cinza escuro (padrão Tailwind gray-800)
+          800: "#1F2937", // cinza escuro
         },
         home: {
           start: "#E2F4F3",
@@ -35,6 +37,9 @@ module.exports = {
         work: {
           50: "#F6F7EC",
           100: "#EAE0D4",
+        },
+        contact: {
+          500: "#156669",
         },
         blog: {
           primary: "#FDF3DD",

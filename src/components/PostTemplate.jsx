@@ -4,23 +4,28 @@ export default function PostTemplate({ title, image, date, children }) {
   const [day, month, year] = date.split("/");
 
   return (
-    <section className="relative bg-[#f4f3f2] min-h-screen py-20 px-4 flex justify-center items-start">
+    <section
+      aria-labelledby="post-title"
+      className="relative bg-[#f4f3f2] min-h-screen py-20 px-4 flex justify-center items-start"
+    >
       {/* Logo flutuante no topo */}
       <div className="absolute top-0 left-0 px-6 py-6 z-10">
         <a
           href="/"
-          className="flex items-center"
+          className="flex items-center group"
           aria-label="Voltar para a home"
         >
           <img
             className="h-10 mr-2 w-auto"
             src="/logo.svg"
-            alt="Logo do Portfolio de Julia Bacchi"
+            alt="Logo Julia Bacchi"
+            width="40"
+            height="40"
           />
         </a>
       </div>
 
-      <div className="relative w-full max-w-5xl">
+      <div aria-hidden="true" className="relative w-full max-w-5xl mx-auto">
         <div className="absolute left-0 font-medium text-gray-600 text-lg flex items-center gap-2 sm:-top-10 -top-2">
           <span>por Julia Bacchi</span>
           <img src={Arrow} alt="seta curva" className="w-16 h-16" />
@@ -35,19 +40,23 @@ export default function PostTemplate({ title, image, date, children }) {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl border-2 border-black p-6 w-full mx-auto mt-16 sm:mt-6">
+        <div className="bg-white rounded-xl border-2 border-black p-6 w-full mx-auto mt-16 sm:mt-6 shadow-lg">
           <img
             src={image}
             alt={title}
             loading="lazy"
+            decoding="async"
             className="w-full h-[18rem] sm:h-[30rem] object-cover py-3 mb-6"
           />
 
-          <h1 className="uppercase text-3xl sm:text-4xl tracking-widest font-semibold mb-4 text-gray-800">
+          <h1
+            id="post-title"
+            className="uppercase text-3xl sm:text-4xl tracking-widest font-semibold mb-4 text-gray-800"
+          >
             {title}
           </h1>
 
-          <div className="text-base py-10 sm:text-lg leading-relaxed text-gray-700 space-y-6">
+          <div className="prose prose-lg py-4 md:py-8 max-w-none text-gray-700 space-y-6">
             {children}
           </div>
         </div>
@@ -55,6 +64,7 @@ export default function PostTemplate({ title, image, date, children }) {
         <div className="mt-10 flex justify-center">
           <button
             onClick={() => window.history.back()}
+            aria-label="Voltar para a página anterior"
             className="px-9 py-2 border-2 border-black text-black font-medium rounded-full hover:bg-black hover:text-white transition"
           >
             Voltar

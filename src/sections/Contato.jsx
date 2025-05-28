@@ -11,7 +11,7 @@ export default function Contato() {
     >
       <FloatingLogo />
 
-      <h2 className="font-serif text-5xl md:text-7xl mb-6 md:mb-8 text-primary-500">
+      <h2 className="font-serif text-5xl md:text-7xl mb-6 md:mb-8 text-contact-500">
         E agora?!
       </h2>
       <p className="text-xl md:text-4xl text-gray-800">Bora trabalhar juntos</p>

@@ -10,7 +10,7 @@ export default function Project() {
     <>
       <main
         id="home"
-        className="fullscreen-section bg-gradient-to-r from-home-start to-home-end text-gray-800 p-4 pb-40"
+        className="fullscreen-section bg-gradient-to-r from-home-start to-home-end text-gray-800 px-4 pb-44 md:pb-40 macbook-air:pb-32 xl:pb-40 pt-6"
       >
         {/* Logo header */}
         <div className="p-2 flex items-center">
@@ -26,7 +26,7 @@ export default function Project() {
               width="40"
               height="40"
             />
-            <p className="font-semibold">Portfolio Julia Bacchi</p>
+            <p className="font-semibold text-gray-800">Portfolio Julia Bacchi</p>
           </a>
         </div>
 

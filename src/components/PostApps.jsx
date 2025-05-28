@@ -3,7 +3,7 @@ import PostTemplate from "./PostTemplate";
 export default function PostApps() {
   return (
     <PostTemplate
-      title="5 apps que mudaram minha rotina como dev (e humana!)"
+      title="5 apps que mudaram minha rotina"
       image="/Apps.jpg"
       date="02/05/2025"
     >
@@ -17,7 +17,7 @@ export default function PostApps() {
         desenvolvimento quanto na vida fora das telas:
       </p>
 
-      <ul className="list-decimal list-inside space-y-4">
+      <ul className="list-decimal list-inside space-y-6 pl-4 marker:text-[#BA4B2E]">
         <li>
           <strong>Notion:</strong> meu cérebro digital. Uso pra organizar
           estudos, projetos, ideias, metas e até meu cardápio semanal. Tudo no
@@ -45,10 +45,8 @@ export default function PostApps() {
         </li>
       </ul>
 
-      <p>
-        📌 Esses apps me ajudam a manter o equilíbrio entre ser produtiva, criar
-        com foco e também lembrar de pausar — porque nem só de código vive uma
-        dev.
+      <p className="pt-4">
+        📌 Esses apps me ajudam a manter o equilíbrio entre ser produtiva...
       </p>
 
       <p>
@@ -57,8 +55,16 @@ export default function PostApps() {
       </p>
 
       <p>
-        E você, tem algum app que mudou sua rotina? Me conta lá no LinkedIn —
-        adoro descobrir novas ferramentas! 💬
+        E você, tem algum app que mudou sua rotina?{" "}
+        <a
+          href="https://linkedin.com/in/juliabacchi"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#BA4B2E] hover:underline"
+        >
+          Me conta lá no LinkedIn
+        </a>{" "}
+        — adoro descobrir novas ferramentas! 💬
       </p>
     </PostTemplate>
   );
