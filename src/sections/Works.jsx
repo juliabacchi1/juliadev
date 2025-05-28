@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FloatingLogo from "../components/FloatingLogo";
 import Button from "../components/Button";
 
@@ -53,20 +53,25 @@ const Works = () => {
     setIndex((prev) => (prev + 1) % projects.length);
   };
 
+  useEffect(() => {
+    const nextIndex = (index + 1) % projects.length;
+    const nextImage = new Image();
+    nextImage.src = projects[nextIndex].view;
+  }, [index]);
+
   return (
     <section
       id="works"
+      aria-labelledby="works-title"
       className="fullscreen-section bg-white flex flex-col md:flex-row items-center justify-center"
     >
       <FloatingLogo />
-      <link
-        rel="preload"
-        href={projects[(index + 1) % projects.length].view}
-        as="image"
-      />
+
       {/* Texto lateral */}
       <div className="w-full md:w-[30%] px-6 my-16 mb-4 md:my-2 md:mx-10 flex flex-col items-center md:items-start text-left">
-        <h2 className="text-4xl md:text-6xl lg:text-7xl mb-6">Trabalhos</h2>
+        <h2 id="works-title" className="text-4xl md:text-6xl lg:text-7xl mb-6">
+          Trabalhos
+        </h2>
         <p className="text-base md:text-lg text-center md:text-start text-gray-700 mb-8 max-w-md">
           Alguns dos meus projetos <br /> entregues e apps white label.
         </p>
@@ -77,7 +82,10 @@ const Works = () => {
           >
             ver mais
           </Button>
-          <Button href="#contato" className="bg-work-100 hover:bg-work-50 font-normal">
+          <Button
+            href="#contato"
+            className="bg-work-100 hover:bg-work-50 font-normal"
+          >
             me chama
           </Button>
         </div>
