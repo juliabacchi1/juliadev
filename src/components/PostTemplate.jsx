@@ -25,7 +25,7 @@ export default function PostTemplate({ title, image, date, children }) {
         </a>
       </div>
 
-      <div aria-hidden="true" className="relative w-full max-w-5xl mx-auto">
+      <div className="relative w-full max-w-5xl mx-auto">
         <div className="absolute left-0 font-medium text-gray-600 text-lg flex items-center gap-2 sm:-top-10 -top-2">
           <span>por Julia Bacchi</span>
           <img src={Arrow} alt="seta curva" className="w-16 h-16" />
@@ -64,7 +64,6 @@ export default function PostTemplate({ title, image, date, children }) {
         <div className="mt-10 flex justify-center">
           <button
             onClick={() => window.history.back()}
-            aria-label="Voltar para a página anterior"
             className="px-9 py-2 border-2 border-black text-black font-medium rounded-full hover:bg-black hover:text-white transition"
           >
             Voltar

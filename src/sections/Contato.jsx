@@ -6,7 +6,7 @@ export default function Contato() {
   return (
     <section
       id="contato"
-      className="fullscreen-section bg-cover bg-center bg-fixed flex flex-col justify-center items-center text-center"
+      className="fullscreen-section bg-cover bg-center bg-local md:bg-fixed flex flex-col justify-center items-center text-center"
       style={{ backgroundImage: "url('/fundo-contato.png')" }}
     >
       <FloatingLogo />
