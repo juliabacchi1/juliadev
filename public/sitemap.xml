@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
+  <url>
+    <loc>https://juliadev.vercel.app/</loc>
+  </url>
+  <url>
+    <loc>https://juliadev.vercel.app/blog/livros</loc>
+  </url>
+  <url>
+    <loc>https://juliadev.vercel.app/blog/series</loc>
+  </url>
+  <url>
+    <loc>https://juliadev.vercel.app/blog/mulher</loc>
+  </url>
+  <url>
+    <loc>https://juliadev.vercel.app/blog/frontend</loc>
+  </url>
+  <url>
+    <loc>https://juliadev.vercel.app/blog/design</loc>
+  </url>
+  <url>
+    <loc>https://juliadev.vercel.app/blog/consciente</loc>
+  </url>
+  <url>
+    <loc>https://juliadev.vercel.app/blog/apps</loc>
+  </url>
+</urlset>
