@@ -1,33 +1,45 @@
-# Julia Bacchi | Front-End Developer & Criadora Digital
+# 🏡 JuliaDev – Portfólio de Desenvolvedora Front-End
 
-Bem-vindo ao meu portfólio! Este projeto é uma vitrine do meu trabalho como desenvolvedora front-end, unindo tecnologia, sustentabilidade e criatividade para construir experiências digitais que acolhem e inspiram.
+**JuliaDev** é meu portfólio pessoal desenvolvido com **React + Vite + TailwindCSS**, combinando tecnologia, criatividade e propósito. Aqui você encontra meus projetos autorais, posts sobre tecnologia consciente, boas práticas em front-end e muito mais — tudo apresentado com um design afetivo, fluido e responsivo.
 
----
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
+[![Tech Stack](https://img.shields.io/badge/Tech%20Stack-React%20%7C%20Vite%20%7C%20Tailwind-blue)](https://reactjs.org/)
+[![Deploy](https://img.shields.io/badge/Deploy-Vercel-purple)](https://juliadev.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-@juliabacchi1%2Fjuliadev-black?logo=github)](https://github.com/juliabacchi1/juliadev)
 
-## 🌐 Site online
-
-Acesse: [https://juliadev.vercel.app](https://juliadev.vercel.app)
-
----
-
-## 📄 Sobre o projeto
-
-Este portfólio foi criado com foco em:
-
-* Experiência fluida e responsiva
-* Design afetivo e acolhedor
-* Destaque para projetos reais e autorais
-* Conteúdo de blog voltado para tecnologia consciente
+![JuliaDev Screenshot](./public/screenshot.webp)
 
 ---
 
-## 📚 Tecnologias utilizadas
+## 🛠️ Tecnologias
 
-* [React](https://react.dev/)
-* [Vite](https://vitejs.dev/)
-* [Tailwind CSS](https://tailwindcss.com/)
-* [React Router DOM](https://reactrouter.com/)
-* [Vercel](https://vercel.com/) para deploy
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- [Vercel](https://vercel.com/) – Deploy
+
+---
+
+## 🚀 Instalação local
+
+```bash
+git clone https://github.com/juliabacchi1/juliadev.git
+cd juliadev
+npm install
+npm run dev
+```
+
+---
+
+## ✨ Destaques
+
+* 💡 Design afetivo e acolhedor com foco em UX
+* 📱 Totalmente responsivo (mobile-first)
+* ⚙️ Componentes reutilizáveis e bem organizados
+* 🧠 Conteúdo original sobre tecnologia consciente
+* 📈 Otimizado com Lighthouse (90+ em Performance, SEO e Acessibilidade)
+* 🌐 SEO e Open Graph configurados para compartilhamento
 
 ---
 
@@ -58,8 +70,6 @@ Este portfólio foi criado com foco em:
 * `NotFound.jsx` - Página 404 personalizada
 * `ScrollToTop.jsx` - Comportamento de rolagem
 
----
-
 ## ✨ Diferenciais
 
 * Componentes organizados e reaproveitáveis
@@ -68,24 +78,23 @@ Este portfólio foi criado com foco em:
 * SEO e compartilhamento social configurados com `meta tags`
 * Responsividade total (mobile-first)
 
----
-
 ## 🌟 Em breve
 
-* Imagem social personalizada (Open Graph)
-* Animações suaves entre páginas
-* Nova seção com mini-projetos ou labs
+* 🖼️ Imagem social personalizada (Open Graph)
+* 🎞️ Transições suaves entre rotas
+* 🧪 Nova seção de mini-projetos e labs criativos
+* 🌙 Modo escuro (dark mode)
+
+## 🙋‍♀️ Feito por
+Julia Bacchi – desenvolvedora front-end apaixonada por inovação, sustentabilidade e boas ideias.
+[LinkedIn](https://www.linkedin.com/in/juliabacchi/) | [Portfólio](https://juliadev.vercel.app/)
+
+## 💬 Quer colaborar?
+Sinta-se à vontade para abrir uma issue, enviar um PR ou apenas mandar um alô. Toda colaboração é bem-vinda 💛
+
+## 📄 Licença
+MIT © Julia Bacchi
 
 ---
 
-## 👋 Vamos conversar?
-
-Entre em contato por [LinkedIn](https://www.linkedin.com/in/juliabacchi/) ou pelo [e-mail](mailto:juliabacchi92@gmail.com).
-
----
-
-**Feito com amor, café e muitos pets**
-
----
-
-> "A tecnologia pode ser funcional, bonita e humana. E é isso que eu construo."
+> “A tecnologia pode (e deve) ser funcional, bonita e humana. É isso que eu construo.” ✨
